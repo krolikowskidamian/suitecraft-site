@@ -2,6 +2,8 @@
 
 Public landing page and product tour for SuiteCraft — Toolkit for NetSuite.
 
+Live website: [krolikowskidamian.github.io/suitecraft-site](https://krolikowskidamian.github.io/suitecraft-site/)
+
 This repository is deliberately self-contained. It contains the website, synthetic product screenshots and presentation assets only. The SuiteCraft browser-extension source code is maintained separately and is not published here.
 
 `demo.html` is a reusable, synthetic six-step product tour. It contains fictional account names, object IDs and values only. Query parameters such as `demo.html?step=3` open a deterministic scene that can be captured for website, store and release screenshots.
