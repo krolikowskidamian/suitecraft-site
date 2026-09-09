@@ -25,6 +25,7 @@
 		<nav id="site-nav" aria-label="Main navigation">
 			<a href="#tour">Product tour</a>
 			<a href="#features">Features</a>
+			<a href="#changelog">Changelog</a>
 			<a href="#privacy">Privacy</a>
 			<a href="#beta">Beta</a>
 			<a href="#about">About</a>
@@ -43,6 +44,7 @@
 					<a class="button secondary" href="#tour">See SuiteCraft in action</a>
 				</div>
 				<p class="compatibility"><span aria-hidden="true">◆</span> Designed for Chrome and Brave · Runs locally in your browser</p>
+				<a class="release-chip" href="#changelog">Latest development build · 0.1.0.2 <span aria-hidden="true">→</span></a>
 			</div>
 			<div class="hero-visual" aria-label="SuiteCraft interface preview">
 				<div class="glow"></div>
@@ -109,6 +111,27 @@
 			</div>
 		</section>
 
+		<section class="section changelog" id="changelog">
+			<div class="section-heading changelog-heading">
+				<div><p class="eyebrow">PRODUCT CHANGELOG</p><h2>What’s new<br>in SuiteCraft.</h2></div>
+				<p>Major user-facing improvements are collected here. Small fixes remain part of the build without turning the changelog into a commit log.</p>
+			</div>
+			<div class="release-list">
+				<article class="release-entry current-release">
+					<header><div><span class="release-status">CURRENT DEVELOPMENT BUILD</span><h3>0.1.0-dev <small>Build 0.1.0.2</small></h3></div><time datetime="2026-09-09">September 9, 2026</time></header>
+					<div class="release-columns">
+						<section><strong>New</strong><ul><li>Share selected snapshot versions safely between authorized SuiteCraft users.</li><li>Inspect scripts and applicable workflows for the current NetSuite record.</li><li>Refresh selected catalogue objects without repeating a full account synchronization.</li></ul></section>
+						<section><strong>Improved</strong><ul><li>Deeper Record Object inspection with sublist discovery, session pins and clearer field actions.</li><li>Resume interrupted synchronization while retaining verified workflow details.</li><li>More practical snapshot comparison with deeper SDF inspection.</li></ul></section>
+					</div>
+					<p class="release-note">Shared snapshot packages retain their source account, role and timestamps, while excluding settings, Favorites and private notes.</p>
+				</article>
+				<article class="release-entry previous-release">
+					<header><div><span class="release-status">FOUNDATION BUILD</span><h3>0.1.0-dev <small>Build 0.1.0.1</small></h3></div><time datetime="2026-09-06">September 6, 2026</time></header>
+					<p>Introduced SuiteCraft Workspace, local versioned snapshots, Catalogue, Favorites, Compare, synchronization, multilingual settings and the first private beta packaging workflow.</p>
+				</article>
+			</div>
+		</section>
+
 		<section class="section beta" id="beta">
 			<div class="beta-card">
 				<div><p class="eyebrow">PRIVATE BETA</p><h2>Help shape the first release.</h2><p>SuiteCraft is still under active development. The first test build will be shared with a small group before a public store release.</p></div>
@@ -125,7 +148,7 @@
 
 	<footer class="site-footer">
 		<div class="footer-brand"><img src="assets/suitecraft-mark.svg" alt=""><div><strong>SuiteCraft</strong><span>Toolkit for NetSuite</span></div></div>
-		<div class="footer-links"><a href="#tour">Product tour</a><a href="#features">Features</a><a href="#privacy">Privacy</a><a href="#beta">Beta</a><a href="https://tally.so/r/gDl0DO" target="_blank" rel="noopener noreferrer">Feedback</a></div>
+		<div class="footer-links"><a href="#tour">Product tour</a><a href="#features">Features</a><a href="#changelog">Changelog</a><a href="#privacy">Privacy</a><a href="#beta">Beta</a><a href="https://tally.so/r/gDl0DO" target="_blank" rel="noopener noreferrer">Feedback</a></div>
 		<p>© <span id="year">2026</span> Damian Krolikowski. SuiteCraft is an independent project and is not affiliated with Oracle or NetSuite.</p>
 	</footer>
 	<script src="assets/site.js"></script>

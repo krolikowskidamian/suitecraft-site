@@ -10,6 +10,8 @@ This repository is deliberately self-contained. It contains the website, synthet
 
 The same real-UI screenshots are embedded in the `#tour` section of `index.html`. The standalone tour is retained as an optional full-screen view and a direct link for testers, rather than the landing page's primary navigation path.
 
+The public `#changelog` summarizes meaningful user-facing builds. Keep it aligned with the newest entry in the extension's bundled `modules/shared/releases.js`; small implementation fixes should be grouped under the relevant build rather than published as raw commit history.
+
 ## Local preview
 
 Open `index.html` directly, or serve this directory with any local static web server. For example:
