@@ -44,7 +44,7 @@
 					<a class="button secondary" href="#tour">See SuiteCraft in action</a>
 				</div>
 				<p class="compatibility"><span aria-hidden="true">◆</span> Designed for Chrome and Brave · Runs locally in your browser</p>
-				<a class="release-chip" href="#changelog">Latest development build · 0.1.0.2 <span aria-hidden="true">→</span></a>
+				<a class="release-chip" href="#changelog">Latest development build · 0.1.0.5 <span aria-hidden="true">→</span></a>
 			</div>
 			<div class="hero-visual" aria-label="SuiteCraft interface preview">
 				<div class="glow"></div>
@@ -108,6 +108,7 @@
 					<div><span>02</span><p><strong>On-demand synchronization</strong>You decide when account metadata is refreshed.</p></div>
 					<div><span>03</span><p><strong>Portable local backups</strong>Export and restore your settings and snapshots with versioned JSON backups.</p></div>
 				</div>
+				<p class="analytics-disclosure"><strong>Privacy-friendly website analytics.</strong> This marketing website uses Cloudflare Web Analytics for aggregate traffic and performance statistics. It does not use cookies or collect personal data. The analytics beacon is not included in the SuiteCraft browser extension.</p>
 			</div>
 		</section>
 
@@ -117,18 +118,25 @@
 				<p>Major user-facing improvements are collected here. Small fixes remain part of the build without turning the changelog into a commit log.</p>
 			</div>
 			<div class="release-list">
-				<article class="release-entry current-release">
-					<header><div><span class="release-status">CURRENT DEVELOPMENT BUILD</span><h3>0.1.0-dev <small>Build 0.1.0.2</small></h3></div><time datetime="2026-09-09">September 9, 2026</time></header>
-					<div class="release-columns">
+				<details class="release-entry current-release" open>
+					<summary><span class="release-summary-main"><span class="release-status">CURRENT DEVELOPMENT BUILD</span><span class="release-title">0.1.0-dev <small>Build 0.1.0.5</small></span><span class="release-teaser">SuiteCraft Lab and clearer release history</span></span><span class="release-summary-side"><time datetime="2026-09-09">September 9, 2026</time><i aria-hidden="true"></i></span></summary>
+					<div class="release-body"><div class="release-columns">
+						<section><strong>New</strong><ul><li>Introduced SuiteCraft Lab: a local synthetic environment for testing Workspace, Record Object and Scripted Records scenarios.</li><li>Added Classic, Redwood-like, hidden-field, inventory-detail and custom child-record scenarios.</li></ul></section>
+						<section><strong>Improved</strong><ul><li>Release notes in the extension now focus on the installed build.</li><li>A direct link opens this complete public release history.</li></ul></section>
+					</div><p class="release-note">The Lab uses production UI modules with synthetic data and never requires localhost access in the released extension.</p></div>
+				</details>
+				<details class="release-entry previous-release">
+					<summary><span class="release-summary-main"><span class="release-status">DEVELOPMENT BUILD</span><span class="release-title">0.1.0-dev <small>Build 0.1.0.4</small></span><span class="release-teaser">Sharing, targeted refresh and deeper inspectors</span></span><span class="release-summary-side"><time datetime="2026-09-09">September 9, 2026</time><i aria-hidden="true"></i></span></summary>
+					<div class="release-body"><div class="release-columns">
 						<section><strong>New</strong><ul><li>Share selected snapshot versions safely between authorized SuiteCraft users.</li><li>Inspect scripts and applicable workflows for the current NetSuite record.</li><li>Refresh selected catalogue objects without repeating a full account synchronization.</li></ul></section>
-						<section><strong>Improved</strong><ul><li>Deeper Record Object inspection with sublist discovery, session pins and clearer field actions.</li><li>Resume interrupted synchronization while retaining verified workflow details.</li><li>More practical snapshot comparison with deeper SDF inspection.</li></ul></section>
+						<section><strong>Improved</strong><ul><li>Deeper Record Object inspection with sublist discovery and session pins.</li><li>Resume interrupted synchronization while retaining verified workflow details.</li><li>More practical snapshot comparison with deeper SDF inspection.</li></ul></section>
 					</div>
-					<p class="release-note">Shared snapshot packages retain their source account, role and timestamps, while excluding settings, Favorites and private notes.</p>
-				</article>
-				<article class="release-entry previous-release">
-					<header><div><span class="release-status">FOUNDATION BUILD</span><h3>0.1.0-dev <small>Build 0.1.0.1</small></h3></div><time datetime="2026-09-06">September 6, 2026</time></header>
-					<p>Introduced SuiteCraft Workspace, local versioned snapshots, Catalogue, Favorites, Compare, synchronization, multilingual settings and the first private beta packaging workflow.</p>
-				</article>
+					<p class="release-note">Shared snapshot packages retain their source account, role and timestamps, while excluding settings, Favorites and private notes.</p></div>
+				</details>
+				<details class="release-entry previous-release">
+					<summary><span class="release-summary-main"><span class="release-status">FOUNDATION BUILD</span><span class="release-title">0.1.0-dev <small>Build 0.1.0.1</small></span><span class="release-teaser">The first complete SuiteCraft Workspace foundation</span></span><span class="release-summary-side"><time datetime="2026-09-06">September 6, 2026</time><i aria-hidden="true"></i></span></summary>
+					<div class="release-body"><p>Introduced SuiteCraft Workspace, local versioned snapshots, Catalogue, Favorites, Compare, synchronization, multilingual settings and the first private beta packaging workflow.</p></div>
+				</details>
 			</div>
 		</section>
 
@@ -152,5 +160,6 @@
 		<p>© <span id="year">2026</span> Damian Krolikowski. SuiteCraft is an independent project and is not affiliated with Oracle or NetSuite.</p>
 	</footer>
 	<script src="assets/site.js"></script>
+	<script src="assets/analytics.js"></script>
 </body>
 </html>
