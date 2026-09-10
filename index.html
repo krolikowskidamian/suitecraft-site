@@ -44,13 +44,13 @@
 					<a class="button secondary" href="#tour">See SuiteCraft in action</a>
 				</div>
 				<p class="compatibility"><span aria-hidden="true">◆</span> Designed for Chrome and Brave · Runs locally in your browser</p>
-				<a class="release-chip" href="#changelog">Latest development build · 0.1.0.5 <span aria-hidden="true">→</span></a>
+				<a class="release-chip" href="#changelog">Latest beta · 0.1.2 <span aria-hidden="true">→</span></a>
 			</div>
 			<div class="hero-visual" aria-label="SuiteCraft interface preview">
 				<div class="glow"></div>
 				<div class="browser-card">
 					<div class="browser-bar"><i></i><i></i><i></i><span>SuiteCraft Workspace</span></div>
-					<img class="hero-product-screen" src="assets/screenshots/02-catalogue.png" alt="SuiteCraft Catalogue interface">
+					<img class="hero-product-screen" src="assets/screenshots/04-compare.png" alt="SuiteCraft snapshot comparison interface">
 				</div>
 			</div>
 		</section>
@@ -64,20 +64,19 @@
 		<section class="section product-tour" id="tour">
 			<div class="section-heading tour-heading">
 				<div><p class="eyebrow">SEE SUITECRAFT IN ACTION</p><h2>Built around real<br>NetSuite work.</h2></div>
-				<p>Explore the real SuiteCraft interface running with completely fictional account data. No conceptual mockups and no client information.</p>
+				<p>Explore SuiteCraft through real product screens that show how each tool fits into everyday NetSuite work.</p>
 			</div>
 			<div class="tour-frame">
 				<div id="tour-media" class="tour-media overview" tabindex="0" aria-label="SuiteCraft product tour. Use left and right arrow keys to change slides.">
-					<div id="tour-overview" class="tour-overview"><img src="assets/screenshots/02-catalogue.png" alt="SuiteCraft Workspace catalogue"><img src="assets/screenshots/01-quick-access.png" alt="SuiteCraft popup search"></div>
-					<img id="tour-image" class="tour-image" src="assets/screenshots/02-catalogue.png" alt="" hidden>
-					<span class="synthetic-badge"><i></i> Synthetic data</span>
+					<div id="tour-overview" class="tour-overview" hidden></div>
+					<img id="tour-image" class="tour-image" src="assets/screenshots/01-quick-access.png" alt="">
 				</div>
 				<aside class="tour-copy" aria-live="polite">
 					<span id="tour-number">01 / 07</span>
-					<p id="tour-kicker">WORKSPACE OVERVIEW</p>
-					<h3 id="tour-title">One toolkit for exploring, comparing and organizing NetSuite customizations.</h3>
-					<p id="tour-description">Move from a quick popup search to deeper account inspection without losing the context of your current work.</p>
-					<ul id="tour-points"><li>Quick access from any NetSuite page</li><li>One workspace for catalogue, favorites, compare and sync</li><li>Local-first by design</li></ul>
+					<p id="tour-kicker">QUICK ACCESS</p>
+					<h3 id="tour-title">Your daily tools, one click away.</h3>
+					<p id="tour-description">Open SuiteCraft from the current NetSuite page and move directly to the tool you need.</p>
+					<ul id="tour-points"><li>Search the current account</li><li>Open Record Explorer or Script &amp; Workflow Inspector</li><li>Reach Workspace, Favorites and developer URLs</li></ul>
 					<a id="tour-fullscreen" href="demo.html?step=1">Open full-screen tour <span aria-hidden="true">↗</span></a>
 					<div class="tour-arrows"><button id="tour-previous" type="button" aria-label="Previous product tour slide">←</button><button id="tour-next" type="button" aria-label="Next product tour slide">→</button></div>
 				</aside>
@@ -91,12 +90,12 @@
 				<p>Focused tools for administrators, developers and consultants who want to understand an account faster and repeat fewer manual steps.</p>
 			</div>
 			<div class="feature-grid">
-				<article class="feature-card featured"><span class="feature-number">01</span><div class="feature-icon">⌕</div><h3>Customization Workspace</h3><p>Search fields, custom records, lists, scripts, deployments and workflows from locally stored account snapshots.</p><ul><li>Account-scoped catalogue</li><li>Manual synchronization</li><li>CSV and JSON export</li></ul></article>
-				<article class="feature-card"><span class="feature-number">02</span><div class="feature-icon">◇</div><h3>Compare snapshots</h3><p>See what was added, removed or changed between environments or points in time, down to individual properties and SDF XML.</p></article>
-				<article class="feature-card"><span class="feature-number">03</span><div class="feature-icon">{ }</div><h3>View Record Object</h3><p>Inspect record body fields and sublists, filter native and custom fields, then copy or export exactly what is visible.</p></article>
-				<article class="feature-card"><span class="feature-number">04</span><div class="feature-icon">★</div><h3>Account favorites</h3><p>Save frequently used NetSuite objects with private notes and find them quickly from the popup or Workspace.</p></article>
-				<article class="feature-card"><span class="feature-number">05</span><div class="feature-icon">⇄</div><h3>System &amp; Debugger URLs</h3><p>Copy or switch between System and Debugger URL variants without rebuilding the address by hand.</p></article>
-				<article class="feature-card future"><span class="feature-number">+</span><div><p class="eyebrow">THE TOOLKIT GROWS</p><h3>More focused tools are coming.</h3><p>SuiteCraft is shaped by real NetSuite work and feedback from its users.</p><a href="https://tally.so/r/gDl0DO" target="_blank" rel="noopener noreferrer">Suggest a feature →</a></div></article>
+				<article class="feature-card featured"><span class="feature-number">01</span><div class="feature-icon">⌕</div><h3>Customization Workspace</h3><p>Search fields, custom records, lists, scripts and workflows from locally stored account snapshots.</p><ul><li>Account-scoped catalogue</li><li>Manual synchronization</li><li>CSV and JSON export</li></ul></article>
+				<article class="feature-card"><span class="feature-number">02</span><div class="feature-icon">{ }</div><h3>Record Explorer</h3><p>Inspect body fields, sublists and current values, filter native and custom fields, and open synchronized field definitions.</p></article>
+				<article class="feature-card"><span class="feature-number">03</span><div class="feature-icon">⌁</div><h3>Script &amp; Workflow Inspector</h3><p>See scripts, deployments and workflows linked to the current record type, with IDs, entry points and workflow activity.</p></article>
+				<article class="feature-card"><span class="feature-number">04</span><div class="feature-icon">◇</div><h3>Compare snapshots</h3><p>See what was added, removed or changed between environments or points in time, down to practical properties and SDF XML.</p></article>
+				<article class="feature-card"><span class="feature-number">05</span><div class="feature-icon">★</div><h3>Account favorites</h3><p>Save frequently used NetSuite objects with private notes and find them quickly from the popup or Workspace.</p></article>
+				<article class="feature-card"><span class="feature-number">06</span><div class="feature-icon">⇄</div><h3>System &amp; Debugger URLs</h3><p>Copy or switch between System and Debugger URL variants without rebuilding the address by hand.</p></article>
 			</div>
 		</section>
 
@@ -119,22 +118,14 @@
 			</div>
 			<div class="release-list">
 				<details class="release-entry current-release" open>
-					<summary><span class="release-summary-main"><span class="release-status">CURRENT DEVELOPMENT BUILD</span><span class="release-title">0.1.0-dev <small>Build 0.1.0.5</small></span><span class="release-teaser">SuiteCraft Lab and clearer release history</span></span><span class="release-summary-side"><time datetime="2026-09-09">September 9, 2026</time><i aria-hidden="true"></i></span></summary>
+					<summary><span class="release-summary-main"><span class="release-status">CURRENT BETA</span><span class="release-title">0.1.2</span><span class="release-teaser">Clearer inspectors, script metadata and a refined popup</span></span><span class="release-summary-side"><time datetime="2026-09-10">September 10, 2026</time><i aria-hidden="true"></i></span></summary>
 					<div class="release-body"><div class="release-columns">
-						<section><strong>New</strong><ul><li>Introduced SuiteCraft Lab: a local synthetic environment for testing Workspace, Record Object and Scripted Records scenarios.</li><li>Added Classic, Redwood-like, hidden-field, inventory-detail and custom child-record scenarios.</li></ul></section>
-						<section><strong>Improved</strong><ul><li>Release notes in the extension now focus on the installed build.</li><li>A direct link opens this complete public release history.</li></ul></section>
-					</div><p class="release-note">The Lab uses production UI modules with synthetic data and never requires localhost access in the released extension.</p></div>
+						<section><strong>New</strong><ul><li>Script synchronization now includes file metadata and groups deployments under their parent scripts.</li><li>Selected snapshots can be shared safely between authorized SuiteCraft users.</li><li>Selected catalogue objects can be refreshed without repeating a full account synchronization.</li></ul></section>
+						<section><strong>Improved</strong><ul><li>Record Explorer has deeper sublist discovery, compact field cards, session pins and direct definition links.</li><li>Script &amp; Workflow Inspector has clearer deployment matching and presentation.</li><li>The popup now separates Workspace, catalogue search, Favorites, record tools and URL tools into distinct actions.</li></ul></section>
+					</div><p class="release-note">Starting with 0.1.2, SuiteCraft uses one consistent version number across the extension, release notes and downloadable packages.</p></div>
 				</details>
 				<details class="release-entry previous-release">
-					<summary><span class="release-summary-main"><span class="release-status">DEVELOPMENT BUILD</span><span class="release-title">0.1.0-dev <small>Build 0.1.0.4</small></span><span class="release-teaser">Sharing, targeted refresh and deeper inspectors</span></span><span class="release-summary-side"><time datetime="2026-09-09">September 9, 2026</time><i aria-hidden="true"></i></span></summary>
-					<div class="release-body"><div class="release-columns">
-						<section><strong>New</strong><ul><li>Share selected snapshot versions safely between authorized SuiteCraft users.</li><li>Inspect scripts and applicable workflows for the current NetSuite record.</li><li>Refresh selected catalogue objects without repeating a full account synchronization.</li></ul></section>
-						<section><strong>Improved</strong><ul><li>Deeper Record Object inspection with sublist discovery and session pins.</li><li>Resume interrupted synchronization while retaining verified workflow details.</li><li>More practical snapshot comparison with deeper SDF inspection.</li></ul></section>
-					</div>
-					<p class="release-note">Shared snapshot packages retain their source account, role and timestamps, while excluding settings, Favorites and private notes.</p></div>
-				</details>
-				<details class="release-entry previous-release">
-					<summary><span class="release-summary-main"><span class="release-status">FOUNDATION BUILD</span><span class="release-title">0.1.0-dev <small>Build 0.1.0.1</small></span><span class="release-teaser">The first complete SuiteCraft Workspace foundation</span></span><span class="release-summary-side"><time datetime="2026-09-06">September 6, 2026</time><i aria-hidden="true"></i></span></summary>
+					<summary><span class="release-summary-main"><span class="release-status">FOUNDATION RELEASE</span><span class="release-title">0.1.0</span><span class="release-teaser">The first complete SuiteCraft Workspace foundation</span></span><span class="release-summary-side"><time datetime="2026-09-06">September 6, 2026</time><i aria-hidden="true"></i></span></summary>
 					<div class="release-body"><p>Introduced SuiteCraft Workspace, local versioned snapshots, Catalogue, Favorites, Compare, synchronization, multilingual settings and the first private beta packaging workflow.</p></div>
 				</details>
 			</div>
@@ -142,8 +133,8 @@
 
 		<section class="section beta" id="beta">
 			<div class="beta-card">
-				<div><p class="eyebrow">PRIVATE BETA</p><h2>Help shape the first release.</h2><p>SuiteCraft is still under active development. The first test build will be shared with a small group before a public store release.</p></div>
-				<div class="beta-action"><span class="status-pill"><i></i> Preparing the beta</span><a class="button primary" href="https://tally.so/r/gDl0DO" target="_blank" rel="noopener noreferrer">Request beta access <span aria-hidden="true">↗</span></a><small>Installation instructions and verified download links will appear here.</small></div>
+				<div><p class="eyebrow">PRIVATE BETA</p><h2>Help shape the first release.</h2><p>SuiteCraft is under active development and has been submitted to the Chrome Web Store for review. Early access remains limited to a small testing group.</p></div>
+				<div class="beta-action"><span class="status-pill"><i></i> Store review in progress</span><a class="button primary" href="https://tally.so/r/gDl0DO" target="_blank" rel="noopener noreferrer">Request beta access <span aria-hidden="true">↗</span></a><small>Approved testers will receive installation details when the beta is available.</small></div>
 			</div>
 		</section>
 
