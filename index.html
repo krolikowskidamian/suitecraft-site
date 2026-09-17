@@ -43,13 +43,13 @@
 					<a class="button secondary" href="#tour">See SuiteCraft in action</a>
 				</div>
 				<p class="compatibility"><span aria-hidden="true">◆</span> Designed for Chrome and Brave · Runs locally in your browser</p>
-				<a class="release-chip" href="#changelog">Latest beta · 0.1.3 <span aria-hidden="true">→</span></a>
+				<a class="release-chip" href="#changelog">Latest beta · 0.2.0 <span aria-hidden="true">→</span></a>
 			</div>
 			<div class="hero-visual" aria-label="SuiteCraft interface preview">
 				<div class="glow"></div>
 				<div class="browser-card">
 					<div class="browser-bar"><i></i><i></i><i></i><span>SuiteCraft Workspace</span></div>
-					<img class="hero-product-screen" src="assets/screenshots/04-compare.png" alt="SuiteCraft snapshot comparison interface">
+					<img class="hero-product-screen" src="assets/screenshots/08-change-plans.png" alt="SuiteCraft Change Plan release readiness interface">
 				</div>
 			</div>
 		</section>
@@ -71,7 +71,7 @@
 					<img id="tour-image" class="tour-image" src="assets/screenshots/02-catalogue.png" alt="">
 				</div>
 				<aside class="tour-copy" aria-live="polite">
-					<span id="tour-number">01 / 07</span>
+					<span id="tour-number">01 / 08</span>
 					<p id="tour-kicker">CUSTOMIZATION CATALOGUE</p>
 					<h3 id="tour-title">Find the right object in seconds.</h3>
 					<p id="tour-description">Search by name or Script ID, combine filters and inspect the selected object without leaving the catalogue.</p>
@@ -94,7 +94,9 @@
 				<article class="feature-card"><span class="feature-number">03</span><div class="feature-icon">⌁</div><h3>Script &amp; Workflow Inspector</h3><p>See scripts, deployments and workflows linked to the current record type, with IDs, entry points and workflow activity.</p></article>
 				<article class="feature-card"><span class="feature-number">04</span><div class="feature-icon">◇</div><h3>Compare snapshots</h3><p>See what was added, removed or changed between environments or points in time, down to practical properties and SDF XML.</p></article>
 				<article class="feature-card"><span class="feature-number">05</span><div class="feature-icon">★</div><h3>Account favorites</h3><p>Save frequently used NetSuite objects with private notes and find them quickly from the popup or Workspace.</p></article>
-				<article class="feature-card"><span class="feature-number">06</span><div class="feature-icon">⇄</div><h3>System &amp; Debugger URLs</h3><p>Copy or switch between System and Debugger URL variants without rebuilding the address by hand.</p></article>
+				<article class="feature-card"><span class="feature-number">06</span><div class="feature-icon">✓</div><h3>Change Plans</h3><p>Prepare releases with target readiness checks, item statuses, notes, links and Markdown, CSV or JSON exports.</p></article>
+				<article class="feature-card"><span class="feature-number">07</span><div class="feature-icon">•••</div><h3>Record page UI</h3><p>Keep SuiteCraft shortcuts close to the record title and optionally wrap crowded NetSuite action bars across multiple rows.</p></article>
+				<article class="feature-card"><span class="feature-number">08</span><div class="feature-icon">⇄</div><h3>System &amp; Debugger URLs</h3><p>Copy or switch between System and Debugger URL variants without rebuilding the address by hand.</p></article>
 			</div>
 		</section>
 
@@ -117,7 +119,14 @@
 			</div>
 			<div class="release-list">
 				<details class="release-entry current-release" open>
-					<summary><span class="release-summary-main"><span class="release-status">CURRENT BETA</span><span class="release-title">0.1.3</span><span class="release-teaser">Record-page shortcuts, instant inspector reopening and clearer reports</span></span><span class="release-summary-side"><time datetime="2026-09-15">September 15, 2026</time><i aria-hidden="true"></i></span></summary>
+					<summary><span class="release-summary-main"><span class="release-status">CURRENT BETA</span><span class="release-title">0.2.0</span><span class="release-teaser">Change Plans, release readiness and deeper record-page insight</span></span><span class="release-summary-side"><time datetime="2026-09-17">September 17, 2026</time><i aria-hidden="true"></i></span></summary>
+					<div class="release-body"><div class="release-columns">
+						<section><strong>New</strong><ul><li>Build local Change Plans for releases, tickets and migrations, then add NetSuite pages directly from the record header.</li><li>Compare plan objects with an exact target account and role to identify deploy, aligned, manual and blocked work.</li><li>Preview and copy Markdown release notes or export complete plans as CSV and JSON.</li><li>Inspect buttons found on a record page and resolve available workflow details in Script &amp; Workflow Inspector.</li></ul></section>
+						<section><strong>Improved</strong><ul><li>Plans include searchable history, item statuses, release and technical notes, plus ticket and delivery links.</li><li>Inspector views now share a consistent searchable layout and automatically load workflow activity and history.</li><li>Record shortcuts have a more accurate live preview, contextual availability and unified movable popups.</li><li>An optional UI feature wraps crowded NetSuite record actions across multiple rows.</li></ul></section>
+					</div><p class="release-note">Change Plans, Favorites and their private notes remain local. Shared snapshot packages continue to exclude them.</p></div>
+				</details>
+				<details class="release-entry previous-release">
+					<summary><span class="release-summary-main"><span class="release-status">PREVIOUS RELEASE</span><span class="release-title">0.1.3</span><span class="release-teaser">Record-page shortcuts, instant inspector reopening and clearer reports</span></span><span class="release-summary-side"><time datetime="2026-09-15">September 15, 2026</time><i aria-hidden="true"></i></span></summary>
 					<div class="release-body"><div class="release-columns">
 						<section><strong>New</strong><ul><li>Open Record Explorer, Script &amp; Workflow Inspector and Favorites directly from NetSuite record headers.</li><li>Choose title, header-action or floating placement, including the top-right or bottom-right corner.</li><li>Export clearer account-level comparison reports for review outside SuiteCraft.</li></ul></section>
 						<section><strong>Improved</strong><ul><li>Record Explorer now reopens instantly with its filters, session pins and scroll position intact.</li><li>Shortcut appearance and position can be adjusted with a live preview.</li><li>Comparison summaries focus on practical configuration changes and easier scanning.</li></ul></section>

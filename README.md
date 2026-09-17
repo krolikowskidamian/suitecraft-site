@@ -6,7 +6,7 @@ Live website: [krolikowskidamian.github.io/suitecraft-site](https://krolikowskid
 
 This repository is deliberately self-contained. It contains the website, synthetic product screenshots and presentation assets only. The SuiteCraft browser-extension source code is maintained separately and is not published here.
 
-`demo.html` is a reusable, synthetic six-step product tour. It contains fictional account names, object IDs and values only. Query parameters such as `demo.html?step=3` open a deterministic scene that can be captured for website, store and release screenshots.
+`demo.html` is a reusable, synthetic eight-step product tour. It contains fictional account names, object IDs and values only. Query parameters such as `demo.html?step=3` open a deterministic scene that can be captured for website, store and release screenshots.
 
 The same real-UI screenshots are embedded in the `#tour` section of `index.html`. The standalone tour is retained as an optional full-screen view and a direct link for testers, rather than the landing page's primary navigation path.
 

@@ -35,3 +35,4 @@ body{overflow-x:hidden}.hero>*{min-width:0}.browser-card,.tour-frame,.tour-media
 .tour-tabs button span{font-size:9px}.tour-tabs button strong{font-size:11px}
 .beta p:not(.eyebrow),.about p:not(.eyebrow){font-size:14px}.beta-action small{font-size:11px}.status-pill{font-size:11px}
 .footer-brand span,.site-footer p{font-size:10px}.footer-links a{font-size:11px}
+.tour-tabs{grid-template-columns:repeat(8,1fr)}
