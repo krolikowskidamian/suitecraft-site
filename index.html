@@ -13,6 +13,7 @@
 	<link rel="canonical" href="https://krolikowskidamian.github.io/suitecraft-site/">
 	<link rel="icon" href="assets/suitecraft-mark.svg" type="image/svg+xml">
 	<link rel="stylesheet" href="assets/site.css">
+	<link rel="stylesheet" href="assets/previews.css">
 </head>
 <body>
 	<a class="skip-link" href="#main">Skip to content</a>
@@ -43,7 +44,7 @@
 					<a class="button secondary" href="#tour">See SuiteCraft in action</a>
 				</div>
 				<p class="compatibility"><span aria-hidden="true">◆</span> Designed for Chrome and Brave · Runs locally in your browser</p>
-				<a class="release-chip" href="#changelog">Latest beta · 0.2.1 <span aria-hidden="true">→</span></a>
+				<a class="release-chip" href="#changelog">Latest beta · 0.2.2 <span aria-hidden="true">→</span></a>
 			</div>
 			<div class="hero-visual" aria-label="SuiteCraft interface preview">
 				<div class="glow"></div>
@@ -58,6 +59,28 @@
 			<div><strong>Local-first</strong><span>Your snapshots stay in your browser</span></div>
 			<div><strong>No server setup</strong><span>Works through your signed-in NetSuite tab</span></div>
 			<div><strong>Built for technical teams</strong><span>Useful detail without extra noise</span></div>
+		</section>
+
+		<section class="section live-previews" id="previews">
+			<div class="section-heading preview-heading">
+				<div><p class="eyebrow">HOVER TO EXPLORE</p><h2>See a workflow,<br>not just a screenshot.</h2></div>
+				<p>Move over a preview or focus it with the keyboard. Each short scene is rendered live with fictional data — no video download and no customer account content.</p>
+			</div>
+			<div class="preview-grid">
+				<article class="preview-card" data-preview="catalogue" tabindex="0" aria-label="Play Customization Catalogue preview">
+					<div class="preview-stage" aria-hidden="true"></div>
+					<div class="preview-card-copy"><span>01 · DISCOVER</span><h3>Customization Catalogue</h3><p>Search the local catalogue and open the object you need.</p><button class="preview-replay" type="button">↻ <span>Replay</span></button></div>
+				</article>
+				<article class="preview-card" data-preview="record-explorer" tabindex="0" aria-label="Play Record Explorer preview">
+					<div class="preview-stage" aria-hidden="true"></div>
+					<div class="preview-card-copy"><span>02 · INSPECT</span><h3>Record Explorer</h3><p>Open the current record and find a field in seconds.</p><button class="preview-replay" type="button">↻ <span>Replay</span></button></div>
+				</article>
+				<article class="preview-card" data-preview="change-plans" tabindex="0" aria-label="Play Change Plans preview">
+					<div class="preview-stage" aria-hidden="true"></div>
+					<div class="preview-card-copy"><span>03 · PREPARE</span><h3>Change Plans</h3><p>Add a customization and turn it into release-ready work.</p><button class="preview-replay" type="button">↻ <span>Replay</span></button></div>
+				</article>
+			</div>
+			<p class="preview-hint"><span aria-hidden="true">↗</span> Hover a card to play · Focus or tap for touch and keyboard</p>
 		</section>
 
 		<section class="section product-tour" id="tour">
@@ -119,7 +142,14 @@
 			</div>
 			<div class="release-list">
 				<details class="release-entry current-release" open>
-					<summary><span class="release-summary-main"><span class="release-status">CURRENT BETA</span><span class="release-title">0.2.1</span><span class="release-teaser">More reliable Change Plan matching and clearer release notes</span></span><span class="release-summary-side"><time datetime="2026-09-18">September 18, 2026</time><i aria-hidden="true"></i></span></summary>
+					<summary><span class="release-summary-main"><span class="release-status">CURRENT BETA</span><span class="release-title">0.2.2</span><span class="release-teaser">Template catalogue synchronization and safer object matching</span></span><span class="release-summary-side"><time datetime="2026-09-22">September 22, 2026</time><i aria-hidden="true"></i></span></summary>
+					<div class="release-body"><div class="release-columns">
+						<section><strong>New</strong><ul><li>Synchronize customized Advanced PDF/HTML Templates and Email Templates into the local catalogue for search, comparison, exports and Change Plans.</li><li>Email Template synchronization covers every record type from the global list without downloading template bodies or message content.</li></ul></section>
+						<section><strong>Improved</strong><ul><li>Cross-account comparison uses portable Script IDs, while same-account history and record-page resolution use account-local Internal IDs.</li><li>Overlapping snapshots and roles are consolidated into one catalogue object, with the connected context preferred where available.</li><li>Change Plan readiness now distinguishes missing source data from a missing portable Script ID.</li><li>Overwrite latest version is enabled by default; clear it when another historical snapshot should be retained.</li></ul></section>
+					</div><p class="release-note">Template synchronization resets remembered list filters, excludes untouched NetSuite defaults and verifies completeness before replacing a snapshot.</p></div>
+				</details>
+				<details class="release-entry previous-release">
+					<summary><span class="release-summary-main"><span class="release-status">PREVIOUS RELEASE</span><span class="release-title">0.2.1</span><span class="release-teaser">More reliable Change Plan matching and clearer release notes</span></span><span class="release-summary-side"><time datetime="2026-09-18">September 18, 2026</time><i aria-hidden="true"></i></span></summary>
 					<div class="release-body"><div class="release-columns">
 						<section><strong>New</strong><ul><li>Add to Change Plan can synchronize a single object on the spot when it isn't in your local catalogue yet, instead of requiring a full category synchronization first.</li></ul></section>
 						<section><strong>Improved</strong><ul><li>Release-readiness comparison now matches objects across accounts by Script ID or Internal ID alone — a differently named admin role or a differently filtered sync no longer hides a real match.</li><li>Custom Record Type comparisons also flag differences in their child Custom Record Fields.</li><li>Items that can't be automatically compared are grouped with manual review items instead of a separate blocked state that could never resolve.</li><li>Generated release-note Markdown is grouped by status and object type, numbered per type, and includes each object's NetSuite link.</li><li>Record-page shortcuts now appear on the Workflow visual editor page, and opening several inspector panels at once brings the one you click to the front.</li></ul></section>
@@ -174,6 +204,7 @@
 		<p>© <span id="year">2026</span> Damian Krolikowski. SuiteCraft is an independent project and is not affiliated with Oracle or NetSuite.</p>
 	</footer>
 	<script src="assets/site.js"></script>
+	<script src="assets/previews.js"></script>
 	<script src="assets/analytics.js"></script>
 </body>
 </html>
