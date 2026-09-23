@@ -44,7 +44,7 @@
 					<a class="button secondary" href="#tour">See SuiteCraft in action</a>
 				</div>
 				<p class="compatibility"><span aria-hidden="true">◆</span> Designed for Chrome and Brave · Runs locally in your browser</p>
-				<a class="release-chip" href="#changelog">Latest beta · 0.2.2 <span aria-hidden="true">→</span></a>
+				<a class="release-chip" href="#changelog">Latest beta · 0.2.3 <span aria-hidden="true">→</span></a>
 			</div>
 			<div class="hero-visual" aria-label="SuiteCraft interface preview">
 				<div class="glow"></div>
@@ -61,7 +61,8 @@
 			<div><strong>Built for technical teams</strong><span>Useful detail without extra noise</span></div>
 		</section>
 
-		<section class="section live-previews" id="previews">
+		<!-- Temporarily hidden while the workflow previews are being refined. -->
+		<section class="section live-previews" id="previews" hidden>
 			<div class="section-heading preview-heading">
 				<div><p class="eyebrow">HOVER TO EXPLORE</p><h2>See a workflow,<br>not just a screenshot.</h2></div>
 				<p>Move over a preview or focus it with the keyboard. Each short scene is rendered live with fictional data — no video download and no customer account content.</p>
@@ -141,8 +142,12 @@
 				<p>Major user-facing improvements are collected here. Small fixes remain part of the build without turning the changelog into a commit log.</p>
 			</div>
 			<div class="release-list">
-				<details class="release-entry current-release" open>
-					<summary><span class="release-summary-main"><span class="release-status">CURRENT BETA</span><span class="release-title">0.2.2</span><span class="release-teaser">Template catalogue synchronization and safer object matching</span></span><span class="release-summary-side"><time datetime="2026-09-22">September 22, 2026</time><i aria-hidden="true"></i></span></summary>
+<details class="release-entry current-release" open>
+<summary><span class="release-summary-main"><span class="release-status">CURRENT BETA</span><span class="release-title">0.2.3</span><span class="release-teaser">Quick Access in NetSuite and Excel exports across Workspace</span></span><span class="release-summary-side"><time datetime="2026-09-23">September 23, 2026</time><i aria-hidden="true"></i></span></summary>
+<div class="release-body"><div class="release-columns"><section><strong>New</strong><ul><li>Change Plan items now use To create, To update, To delete, Needs attention, Completed and Excluded. Needs attention is the default; Markdown groups items by action and includes Code / delivery / PR links.</li><li>Quick Access in the NetSuite navigation bar brings account Favorites and local catalogue search together, with results opening in new tabs.</li><li>Choose CSV or Excel XLSX for catalogue, comparison, missing-scope, snapshot and Change Plan exports.</li></ul></section><section><strong>Improved</strong><ul><li>Quick Access opens on hover with search focused, preserves results while hidden and waits 500 ms after typing before searching.</li><li>Manual workflow and custom-record detail synchronization is available in a collapsed Advanced section.</li></ul></section><section><strong>Fixed</strong><ul><li>Quick Access stays in the navigation menu, respects its display scaling and accepts spaces in search queries.</li><li>Synchronization resets and verifies supported list filters so remembered Script Type, API Version and workflow status selections do not silently narrow downloads.</li></ul></section></div><p class="release-note">Quick Access uses local data: Favorites belong to the current account, and catalogue search is scoped to the verified account and role. Use Reload data after synchronization to refresh cached results.</p></div>
+</details>
+				<details class="release-entry previous-release">
+					<summary><span class="release-summary-main"><span class="release-status">PREVIOUS RELEASE</span><span class="release-title">0.2.2</span><span class="release-teaser">Template catalogue synchronization and safer object matching</span></span><span class="release-summary-side"><time datetime="2026-09-22">September 22, 2026</time><i aria-hidden="true"></i></span></summary>
 					<div class="release-body"><div class="release-columns">
 						<section><strong>New</strong><ul><li>Synchronize customized Advanced PDF/HTML Templates and Email Templates into the local catalogue for search, comparison, exports and Change Plans.</li><li>Email Template synchronization covers every record type from the global list without downloading template bodies or message content.</li></ul></section>
 						<section><strong>Improved</strong><ul><li>Cross-account comparison uses portable Script IDs, while same-account history and record-page resolution use account-local Internal IDs.</li><li>Overlapping snapshots and roles are consolidated into one catalogue object, with the connected context preferred where available.</li><li>Change Plan readiness now distinguishes missing source data from a missing portable Script ID.</li><li>Overwrite latest version is enabled by default; clear it when another historical snapshot should be retained.</li></ul></section>
