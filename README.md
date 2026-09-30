@@ -37,3 +37,7 @@ Before a public launch, replace the beta placeholder with the verified release d
 All screenshots use fictional accounts, IDs, names and values. Do not replace them with captures from a client account unless every customer identifier and confidential value has been removed and the result has been reviewed before publication.
 
 Never add extension source, private build configuration, signing keys, source maps or unpacked extension builds to this repository.
+
+## 0.3.0 screenshots
+
+The landing page includes fresh captures of the real extension popup, navigation Quick Access, reference lists, list synchronization and Settings. Captures use fictional Northstar data in the extension repository's local lab. They are product previews, not evidence of live NetSuite compatibility testing.
