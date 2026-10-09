@@ -10,7 +10,9 @@ This repository is deliberately self-contained. It contains the website, synthet
 
 The same real-UI screenshots are embedded in the `#tour` section of `index.html`. The standalone tour is retained as an optional full-screen view and a direct link for testers, rather than the landing page's primary navigation path.
 
-The public `#changelog` summarizes meaningful user-facing builds. Keep it aligned with the newest entry in the extension's bundled `modules/shared/releases.js`; small implementation fixes should be grouped under the relevant build rather than published as raw commit history.
+The landing page's `#changelog` shows only the current release, with New / Improved / Fixed sections and a link to `changelog.html`. The dedicated history page contains every published version, newest first: the current release is expanded and earlier releases are collapsed. Direct links such as `changelog.html#v0-4-1` open the selected version. All current entries belong to the beta channel; use `Current release` and `Earlier release` consistently rather than mixing beta and release labels.
+
+For each approved release, update the latest-version chip and current notes in `index.html`, add the same release to `changelog.html`, and mark the previous history entry as earlier and collapsed. Keep the version, date and notes aligned with the extension's bundled `modules/shared/releases.js`. Preserve historical entries; small implementation fixes should be grouped under the relevant release rather than published as raw commit history.
 
 ## Local preview
 
