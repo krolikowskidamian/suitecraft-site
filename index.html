@@ -29,7 +29,7 @@
 			<a href="#changelog">Changelog</a>
 			<a href="#about">About</a>
 			<a href="privacy.html">Privacy <span aria-hidden="true">↗</span></a>
-			<a class="nav-cta" href="#beta">Request beta access <span aria-hidden="true">→</span></a>
+			<a class="nav-cta" href="https://chromewebstore.google.com/detail/suitecraft-for-netsuite/hpcgajocaokahoibhmiofdjdjnnielka" target="_blank" rel="noopener noreferrer">Install extension <span aria-hidden="true">↗</span></a>
 		</nav>
 	</header>
 
@@ -40,11 +40,11 @@
 				<h1>Less clicking.<br><em>More clarity.</em></h1>
 				<p class="hero-lead">SuiteCraft brings record inspection, customization discovery, local snapshots and comparison tools into one focused browser workspace.</p>
 				<div class="hero-actions">
-					<a class="button primary" href="#beta">Join the beta <span aria-hidden="true">→</span></a>
+					<a class="button primary" href="https://chromewebstore.google.com/detail/suitecraft-for-netsuite/hpcgajocaokahoibhmiofdjdjnnielka" target="_blank" rel="noopener noreferrer">Install from Chrome Web Store <span aria-hidden="true">↗</span></a>
 					<a class="button secondary" href="#tour">See SuiteCraft in action</a>
 				</div>
 				<p class="compatibility"><span aria-hidden="true">◆</span> Designed for Chrome and Brave · Runs locally in your browser</p>
-				<a class="release-chip" href="#changelog">Latest beta · 0.4.1 <span aria-hidden="true">→</span></a>
+				<a class="release-chip" href="#changelog">1.0.0 · Coming soon <span aria-hidden="true">→</span></a>
 			</div>
 			<div class="hero-visual" aria-label="SuiteCraft interface preview">
 				<div class="glow"></div>
@@ -144,33 +144,33 @@
 		<section class="section changelog" id="changelog" aria-labelledby="release-notes-heading">
 			<article class="release-card">
 				<header class="release-card-heading">
-					<div><p class="eyebrow">WHAT’S NEW</p><h2 id="release-notes-heading">Release notes</h2><p>SuiteCraft Search, clearer Change Plans and faster sync modes.</p></div>
-					<div class="release-current-version"><strong>SuiteCraft 0.4.1</strong><span>Current release · Beta channel</span></div>
+					<div><p class="eyebrow">WHAT’S NEW</p><h2 id="release-notes-heading">Release notes</h2><p>First official release, safer local data and more reliable synchronization.</p></div>
+					<div class="release-current-version"><strong>SuiteCraft 1.0.0</strong><span>Prepared release · Store submission pending</span></div>
 				</header>
-				<p class="release-card-date">Released <time datetime="2026-10-08">October 8, 2026</time></p>
-				<div class="release-body"><div class="release-columns"><section class="release-section new"><h3>New</h3><ul><li>SuiteCraft Search brings Menu, This page and Workspace together in All, with separate scopes and filters for Favorites, Catalogue and List values.</li><li>Menu results show matching destinations with their full navigation path and type. Current-page fields can be found by label or field ID, then located on the form or copied by ID. Empty All and Menu searches show no result tree.</li></ul></section><section class="release-section improved"><h3>Improved</h3><ul><li>Go to record remains directly beside the search input and carries the entered ID into the record finder. All shows up to three results per source, with Show all opening the relevant scope.</li><li>Change Plans have clearer summaries, progress and action menus, expandable descriptions and notes, and an Example item status for test cases and supporting references.</li><li>Synchronization offers Default, Quick, Quickest and experimental Turbo modes, with bounded parallel requests, retry backoff and session timing comparisons.</li></ul></section><section class="release-section fixed"><h3>Fixed</h3><ul><li>Saved Search links open the definition consistently from Quick find record, Favorites and Change Plans while preserving existing favorite and plan-item identities.</li><li>Parallel synchronization retains deterministic snapshot order and never publishes an incomplete list after failed requests, cancellation or an account or role change.</li></ul></section></div></div>
+				<p class="release-card-date">Prepared <time datetime="2026-10-15">October 15, 2026</time></p>
+				<div class="release-body"><div class="release-columns"><section class="release-section new"><h3>New</h3><ul><li>First official SuiteCraft release: record inspection, customization search, local snapshots, comparison and Change Plans in one read-only NetSuite toolkit.</li></ul></section><section class="release-section improved"><h3>Improved</h3><ul><li>English, Polish, Spanish and German interface text is more complete and consistent across the bundled tools.</li><li>JSON backups use compact files and include supported object refreshes. Optional storage details distinguish category snapshots from Custom Record field sets.</li></ul></section><section class="release-section fixed"><h3>Fixed</h3><ul><li>Concurrent edits to Change Plans and Favorites are coordinated, and full local storage now reports a clear error without deleting existing data.</li><li>Large Workspace backups export supported records with empty names or unresolved reference links, preserving their data instead of failing validation.</li><li>Custom Record field sets are grouped by their actual scope, preventing unrelated legacy sublist filters from inflating the current snapshot count.</li><li>Synchronization verifies supported list filters and coordinates cancellation and checkpoint recovery across Workspace tabs, retaining previously verified snapshots when a run fails.</li><li>SuiteCraft Search keeps its navigation button in place when NetSuite opens native global search results.</li><li>Local database connections recover more safely around extension updates and explain when a Workspace page must be reopened, without resetting stored data.</li></ul></section></div></div>
 				<div class="release-history-link"><div><h3>Looking for an older release?</h3><p>Browse all versions and their detailed release notes.</p></div><a class="button primary" href="changelog.html">View full release history <span aria-hidden="true">→</span></a></div>
 			</article>
 		</section>
 
 		<section class="section beta" id="beta">
 			<div class="beta-card">
-				<div><p class="eyebrow">PRIVATE BETA</p><h2>Help shape the first release.</h2><p>SuiteCraft is under active development and has been submitted to the Chrome Web Store for review. Early access remains limited to a small testing group.</p></div>
-				<div class="beta-action"><span class="status-pill"><i></i> Store review in progress</span><a class="button primary" href="https://tally.so/r/gDl0DO" target="_blank" rel="noopener noreferrer">Request beta access <span aria-hidden="true">↗</span></a><small>Approved testers will receive installation details when the beta is available.</small></div>
+				<div><p class="eyebrow">CHROME WEB STORE</p><h2>Try SuiteCraft in your NetSuite workspace.</h2><p>SuiteCraft is available through its Chrome Web Store link. Install the extension and open a NetSuite page where you are already signed in.</p></div>
+				<div class="beta-action"><span class="status-pill"><i></i> Available by direct link</span><a class="button primary" href="https://chromewebstore.google.com/detail/suitecraft-for-netsuite/hpcgajocaokahoibhmiofdjdjnnielka" target="_blank" rel="noopener noreferrer">Install from Chrome Web Store <span aria-hidden="true">↗</span></a><small>Requires access to a NetSuite account. Have a question? Use the contact form below.</small></div>
 			</div>
 		</section>
 
 		<section class="section about" id="about">
 			<div class="author-photo"><img src="assets/damian-krolikowski.jpg" alt="Damian Krolikowski" width="800" height="800"></div>
-			<div><p class="eyebrow">INDEPENDENTLY BUILT</p><h2>Hi, I’m Damian.</h2><p>I built SuiteCraft around the small frustrations that add up during everyday NetSuite work. My goal is to create focused tools that fit naturally into your workflow and stay out of the way until you need them.</p><p>SuiteCraft is an independent project, developed and maintained by Damian Krolikowski.</p></div>
-			<aside><span>Enjoying SuiteCraft?</span><strong>Support continued development.</strong><a href="https://buymeacoffee.com/damiandk" target="_blank" rel="noopener noreferrer">☕ Buy me a coffee <span aria-hidden="true">↗</span></a></aside>
+			<div><p class="eyebrow">INDEPENDENTLY BUILT</p><h2>Hi, I’m Damian.</h2><p>I’m Damian Krolikowski, a freelance NetSuite technical consultant and developer, and the creator of SuiteCraft. I help teams with NetSuite development, customizations and technical troubleshooting.</p><p>SuiteCraft grew out of the small frustrations that add up during everyday NetSuite work. Need help with a NetSuite project? Get in touch to discuss the scope and how I can help.</p><a class="button secondary" href="https://tally.so/r/gDl0DO" target="_blank" rel="noopener noreferrer">Discuss a NetSuite project <span aria-hidden="true">↗</span></a></div>
+			<aside><span>Enjoying SuiteCraft?</span><strong>Support continued development.</strong><p>Coffee contributions are optional support for SuiteCraft. Paid consulting and development work are agreed separately.</p><a href="https://buymeacoffee.com/damiandk" target="_blank" rel="noopener noreferrer">☕ Buy me a coffee <span aria-hidden="true">↗</span></a></aside>
 		</section>
 	</main>
 	<a class="coffee-float" href="https://buymeacoffee.com/damiandk" target="_blank" rel="noopener noreferrer" aria-label="Buy me a coffee" title="Buy me a coffee"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h12v7a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5V8Z"/><path d="M17 10h1a3 3 0 0 1 0 6h-1M7 4c-1.5 1.2 1.5 1.8 0 3M12 4c-1.5 1.2 1.5 1.8 0 3"/></svg><span>Buy me a coffee</span></a>
 
 	<footer class="site-footer">
 		<div class="footer-brand"><img src="assets/suitecraft-mark.svg" alt=""><div><strong>SuiteCraft</strong><span>Toolkit for NetSuite</span></div></div>
-		<div class="footer-links"><a href="#tour">Product tour</a><a href="#features">Features</a><a href="#changelog">Changelog</a><a href="#about">About</a><a href="privacy.html">Privacy <span aria-hidden="true">↗</span></a><a href="#beta">Beta</a><a href="https://buymeacoffee.com/damiandk" target="_blank" rel="noopener noreferrer">Support <span aria-hidden="true">↗</span></a><a href="https://tally.so/r/gDl0DO" target="_blank" rel="noopener noreferrer">Feedback <span aria-hidden="true">↗</span></a></div>
+		<div class="footer-links"><a href="#tour">Product tour</a><a href="#features">Features</a><a href="#changelog">Changelog</a><a href="#about">About</a><a href="privacy.html">Privacy <span aria-hidden="true">↗</span></a><a href="#beta">Install</a><a href="https://buymeacoffee.com/damiandk" target="_blank" rel="noopener noreferrer">Support <span aria-hidden="true">↗</span></a><a href="https://tally.so/r/gDl0DO" target="_blank" rel="noopener noreferrer">Feedback <span aria-hidden="true">↗</span></a></div>
 		<p>© <span id="year">2026</span> Damian Krolikowski. SuiteCraft is an independent project and is not affiliated with Oracle or NetSuite.</p>
 	</footer>
 	<script src="assets/site.js"></script>
