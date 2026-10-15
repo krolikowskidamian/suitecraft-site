@@ -52,4 +52,4 @@ Record Explorer, Inspector, Catalogue, Change Plans, Compare and Synchronization
 
 ## 1.0.0 release preparation
 
-Damian approved 1.0.0 and a Store build on 15 October 2026. Current notes and the version chip are updated locally; 0.4.1 remains preserved in release history. This does not confirm Store publication. Until Store publication is confirmed, the chip says Coming soon and the notes are marked Prepared release / Store submission pending. After publication, change those labels to Latest release / Current release and the date label to Released.
+Damian approved 1.0.0 and a Store build on 15 October 2026. Version 0.4.1 remains preserved in release history. At Damian’s request, the website copy is prepared for the accepted release: the hero links to “What’s new in 1.0.0”, the notes use Current release / Stable channel, and the date label is Released. These labels do not independently verify the Store’s actual approval or publication state.
