@@ -1,4 +1,3 @@
-/* Synthetic on-page tools; no NetSuite calls, extension source or persistence. */
 (()=>{
  const root=document.querySelector('#onpage-demo');if(!root)return;const $=s=>root.querySelector(s),panel=$('#op-panel'),body=$('#op-panel-body'),status=$('#op-status');let active='',opener=null,savedNote='',favorite=false,planName='October approval release',inPlan=false,scope='All',searchQuery='',workspaceScope='All',objectType='All object types',inspectorTab='Overview';const pinned=new Set();
  const node=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n};

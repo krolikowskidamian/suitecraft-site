@@ -1,4 +1,3 @@
-/* Independent popup preview: fixtures only, no extension APIs or account requests. */
 (()=>{
  const root=document.querySelector('#popup-demo');if(!root)return;
  const $=s=>root.querySelector(s), status=$('#pp-status'), body=$('.pp-body');

@@ -1,4 +1,3 @@
-// The screenshot viewer uses the site's existing, synthetic product screens.
 const imageDialog=document.querySelector('#screenshot-dialog');
 function openScreenshot(src,title){
   const image=document.querySelector('#screenshot-image');image.src=src;image.alt=`SuiteCraft ${title} using fictional sample data`;
@@ -18,7 +17,6 @@ const workspaceTabs=[...document.querySelectorAll('[data-workspace-tab]')];
 const workspaceDemo=document.querySelector('#workspace-demo');
 function activateWorkspace(key){
   for(const tab of workspaceTabs){const active=tab.dataset.workspaceTab===key;tab.setAttribute('aria-selected',String(active));tab.tabIndex=active?0:-1;document.querySelector(`#workspace-panel-${tab.dataset.workspaceTab}`).hidden=!active}
-  // Focusing this existing control interrupts a running walkthrough using its own lifecycle.
   if(key!=='catalogue'){
     workspaceDemo.querySelector('[data-demo-search]').dispatchEvent(new Event('focus'));
     workspaceDemo.querySelector('[data-demo-caption]').textContent='Try the controls. All changes are temporary and use fictional sample data.';
@@ -31,7 +29,5 @@ workspaceTabs.forEach((tab,index)=>{
 });
 workspaceDemo.addEventListener('show-catalogue',()=>activateWorkspace('catalogue'));
 
-// Make the reused tour's tabs explicitly identify their visible panel.
 document.querySelectorAll('#tour-tabs [role=tab]').forEach((tab,index)=>{tab.id=`product-slide-${index}`;tab.setAttribute('aria-controls','tour-media')});
-// Start the product tour at its first slide.
 showTourSlide(0);

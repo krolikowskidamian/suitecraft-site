@@ -1,4 +1,3 @@
-/* Highlight the real entry points rather than changing the product's icon sizes. */
 (()=>{
  const root=document.querySelector('#onpage-demo'),page=root.querySelector('.op-page'),labels=root.querySelector('#op-guide-labels'),toggle=root.querySelector('#op-guide-toggle');
  const launcher=root.querySelector('.op-netsuite-nav>[data-op-tool="search"]'),shortcuts=root.querySelector('.op-shortcuts');let visible=true;

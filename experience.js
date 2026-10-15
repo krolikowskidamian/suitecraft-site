@@ -1,4 +1,3 @@
-/* Presentation-only navigation and contextual help. No account data or storage. */
 (()=>{
  const header=document.querySelector('.site-header');let queued=false;
  function updateHeader(){header.classList.toggle('is-compact',scrollY>55);queued=false}

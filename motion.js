@@ -19,7 +19,6 @@ function draw() {
   pointer.y += (pointer.ty - pointer.y) * .035;
   const mx = (pointer.x - .5) * 80, my = (pointer.y - .35) * 50;
   ctx.globalCompositeOperation = 'screen';
-  // A soft light ribbon loops behind the content; its fine threads form a terrain below.
   for (let glow = 3; glow >= 0; glow--) {
     ctx.beginPath();
     for (let i = 0; i <= 180; i++) {
@@ -52,7 +51,6 @@ function draw() {
     g.addColorStop(0,'rgba(101,66,192,0)');g.addColorStop(.2,`rgba(101,66,192,${.10 + row * .002})`);g.addColorStop(.48,`rgba(188,145,255,${.2 + row * .003})`);g.addColorStop(.72,'rgba(63,103,170,.16)');g.addColorStop(1,'rgba(101,66,192,0)');
     ctx.strokeStyle=g;ctx.lineWidth=.65;ctx.stroke();
   }
-  // Sparse highlights travel along the surface, without obscuring the text.
   for(let i=0;i<28;i++){
     const u=((i * .137 + time * .007)%1), depth=(i%12)/12;
     const x=u*(width+150)-75+mx*depth;

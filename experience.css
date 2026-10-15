@@ -1,10 +1,8 @@
-/* A stable slot prevents the compact navigation from shifting the page. */
 .header-slot{height:90px}.site-header{position:fixed;inset:0 0 auto;z-index:40;height:90px;min-height:90px;background:#182c45f5;backdrop-filter:blur(18px);transition:height .25s ease,min-height .25s ease,box-shadow .25s ease,border-color .25s ease}.site-header .brand img{transition:width .25s ease,height .25s ease}.site-header .brand strong,.site-header .brand small,.site-header .nav-cta{transition:font-size .25s ease,padding .25s ease}.site-header.is-compact{height:60px;min-height:60px;border-bottom-color:#b9a3d72b;box-shadow:0 7px 30px #081c3526}.site-header.is-compact .brand img{width:31px;height:31px}.site-header.is-compact .brand strong{font-size:15px}.site-header.is-compact .brand small{font-size:8px;margin-top:3px}.site-header.is-compact .nav-cta{padding:8px 14px}html{scroll-padding-top:82px}#tour,#features,#privacy,#beta,#about,#workspace,#popup-demo,#onpage-demo{scroll-margin-top:20px}
 .sc-tooltip{position:fixed;z-index:200;max-width:min(285px,calc(100vw - 24px));width:max-content;padding:13px 15px;border:1px solid #b99be54d;border-radius:9px;background:#192c43;color:#d7deec;box-shadow:0 12px 35px #10294230;font:11px/1.65 'DM Sans',system-ui,sans-serif;animation:tooltip-in .12s ease-out;pointer-events:auto}.sc-tooltip strong{display:block;color:#f4ecff;font-size:12px;font-weight:600;margin-bottom:4px;line-height:1.5}.sc-tooltip:after{content:'';position:absolute;left:var(--tip-x,50%);bottom:-5px;width:8px;height:8px;background:#192c43;border-right:1px solid #b99be54d;border-bottom:1px solid #b99be54d;transform:translateX(-50%) rotate(45deg)}.sc-tooltip[data-placement=below]:after{bottom:auto;top:-5px;transform:translateX(-50%) rotate(225deg)}.sc-tooltip[hidden]{display:none!important}@keyframes tooltip-in{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:none}}
 @media(max-width:720px){.header-slot{height:76px}.site-header{height:76px;min-height:76px}.site-header.is-compact{height:56px;min-height:56px}.site-header nav{top:100%;max-height:calc(100dvh - 56px);overflow:auto}.site-header.is-compact .brand img{width:29px;height:29px}.site-header .menu-toggle span:not(.sr-only){background:#d7c3f5}.sc-tooltip{font-size:10px;padding:11px 13px;max-width:min(265px,calc(100vw - 24px))}}
 @media(prefers-reduced-motion:reduce){.site-header,.site-header *{transition:none!important}.sc-tooltip{animation:none}}
 
-/* Restore the original high-contrast footer; keep motion controls in its flow. */
 .site-footer{background:#06172d;color:#fff;padding-top:38px;padding-bottom:30px;gap:28px}
 .site-footer .footer-brand img{width:35px;height:30px;object-fit:contain;filter:none}
 .site-footer .footer-brand strong{color:#fff;font-size:14px}
@@ -18,7 +16,6 @@
 .site-footer .motion-control button:hover{background:#ffffff12;border-color:#ab91d1}
 @media(max-width:720px){.site-footer{padding-bottom:85px;gap:23px}.footer-bottom{flex-direction:column;align-items:flex-start;gap:16px}.site-footer .footer-links{column-gap:22px;row-gap:12px}.site-footer .footer-bottom p{font-size:10px}}
 
-/* The full screenshot tour is optional, after the three hands-on demos. */
 .screen-gallery{grid-column:1/-1;min-width:0;margin:0 0 38px;scroll-margin-top:20px}
 .screen-gallery details{border:1px solid #dcd1eb;border-radius:12px;background:linear-gradient(120deg,#f5f0fc,#faf9fd);overflow:hidden}
 .gallery-summary{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:29px 32px;cursor:pointer;list-style:none}
@@ -35,7 +32,6 @@
 .gallery-body .tour-frame{box-shadow:0 15px 35px #42316b0b}.gallery-body .tour-media{height:520px}
 @media(max-width:720px){.screen-gallery{margin-bottom:25px}.gallery-summary{padding:22px;align-items:flex-start;flex-direction:column;gap:18px}.gallery-summary-copy strong{font-size:23px}.gallery-description{font-size:11px}.gallery-toggle{font-size:10px;padding:8px 12px}.gallery-body{padding:16px}.gallery-body .section-heading h2{font-size:28px}.gallery-body .tour-media{height:310px}.gallery-body .tour-copy{padding:22px}.gallery-body .tour-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
-/* Gallery is a permanent section; both menus follow its actual page order. */
 .screen-gallery{border:1px solid #ded3ed;border-radius:12px;background:#faf8fe;overflow:hidden}
 .screen-gallery .gallery-body{padding:32px;border:0;background:transparent}
 .site-header nav{gap:17px}.site-header nav a{white-space:nowrap}
@@ -45,17 +41,14 @@
 @media(max-width:900px){.site-header .menu-toggle{display:grid;gap:4px;padding:9px;border:0;background:transparent}.site-header .menu-toggle span:not(.sr-only){display:block;width:21px;height:2px;background:#d7c3f5}.site-header nav{position:absolute;top:100%;left:0;right:0;display:none;align-items:stretch;flex-direction:column;gap:0;padding:12px 24px 20px;border-bottom:1px solid #53617b;background:#182c45;max-height:calc(100dvh - 60px);overflow:auto}.site-header nav.open{display:flex}.site-header nav a{padding:11px;font-size:12px}.site-header .nav-cta{text-align:center;margin:5px 0}}
 @media(max-width:720px){.screen-gallery .gallery-body{padding:18px}}
 
-/* Expanded Workspace controls sit on the dialog's navy background. */
 .catalogue-demo-dialog .workspace-demo-controls>span{color:#dfcffb}
 .catalogue-demo-dialog .workspace-demo-controls button{background:#203952;color:#fff;border-color:#7f92ac}
 .catalogue-demo-dialog .workspace-demo-controls button:hover,
 .catalogue-demo-dialog .workspace-demo-controls button[aria-pressed="true"]{background:#4b3875;color:#fff;border-color:#cbb2f4}
 .catalogue-demo-dialog .workspace-demo-controls button:focus-visible{outline-color:#decaff;outline-offset:3px}
 
-/* Keep the installation action readable in every pointer/keyboard state. */
 .site-header nav a.nav-cta{color:#24133d;background:#cbb2f4}
 .site-header nav a.nav-cta:hover,.site-header nav a.nav-cta:focus-visible{color:#24133d;background:#decaff}
 .site-header nav a.nav-cta:active{color:#24133d;background:#bea0ec}
 
-/* Match other section anchors; the fixed header offset is set on html. */
 #changelog{scroll-margin-top:20px}
