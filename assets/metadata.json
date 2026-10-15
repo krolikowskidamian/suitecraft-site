@@ -1,0 +1,262 @@
+{
+  "brand/suitecraft-mark-on-light.svg": {
+    "origin": "Wektorowy zestaw marki SuiteCraft",
+    "status": "brand"
+  },
+  "brand/suitecraft-mark.svg": {
+    "origin": "Wektorowy zestaw marki SuiteCraft",
+    "status": "brand"
+  },
+  "brand/suitecraft-logo.svg": {
+    "origin": "Wektorowy zestaw marki SuiteCraft",
+    "status": "brand"
+  },
+  "brand/suitecraft-mark-on-dark.svg": {
+    "origin": "Wektorowy zestaw marki SuiteCraft",
+    "status": "brand"
+  },
+  "brand/icons/icon-16.png": {
+    "origin": "Ikona SuiteCraft",
+    "status": "brand"
+  },
+  "brand/icons/icon-48.png": {
+    "origin": "Ikona SuiteCraft",
+    "status": "brand"
+  },
+  "brand/icons/icon-128.png": {
+    "origin": "Ikona SuiteCraft",
+    "status": "brand"
+  },
+  "brand/icons/icon-source.svg": {
+    "origin": "Ikona SuiteCraft",
+    "status": "brand"
+  },
+  "brand/icons/icon-32.png": {
+    "origin": "Ikona SuiteCraft",
+    "status": "brand"
+  },
+  "marketing/buy-me-a-coffee/suitecraft-buymeacoffee-cover.png": {
+    "title": "Buy Me a Coffee · gotowa okładka",
+    "origin": "Grafika marki przygotowana do publikacji",
+    "status": "ready"
+  },
+  "marketing/buy-me-a-coffee/suitecraft-buymeacoffee-cover-source.png": {
+    "title": "Buy Me a Coffee · oryginał",
+    "origin": "Oryginał grafiki przed dopasowaniem kadru",
+    "status": "source",
+    "aliases": [
+      "logo cover suitecraft.png"
+    ]
+  },
+  "marketing/chrome-web-store/promo-440x280-current.png": {
+    "title": "Chrome Web Store · kafelek promocyjny",
+    "origin": "Natywna grafika marki · październik 2026",
+    "status": "ready"
+  },
+  "brand/originals/suitecraft-logo-large.png": {
+    "title": "Logo SuiteCraft · oryginał",
+    "origin": "Oryginalny materiał marki z folderu Images",
+    "status": "variant"
+  },
+  "brand/originals/suitecraft-logo-large-alternative.png": {
+    "title": "Logo SuiteCraft · wariant",
+    "origin": "Oryginalny materiał marki z folderu Images",
+    "status": "variant"
+  },
+  "brand/originals/suitecraft-icon-original.svg": {
+    "title": "Ikona · oryginał SVG",
+    "origin": "Oryginalny materiał marki z folderu Images",
+    "status": "variant"
+  },
+  "marketing/chrome-web-store/promo-marquee-1400x560.png": {
+    "title": "Chrome Web Store · duży banner",
+    "origin": "Oryginalny materiał marki z folderu Images",
+    "status": "variant"
+  },
+  "marketing/chrome-web-store/promo-small-440x280-alternative.png": {
+    "title": "Chrome Web Store · kafelek, wariant",
+    "origin": "Oryginalny materiał marki z folderu Images",
+    "status": "variant"
+  },
+  "brand/originals/suitecraft-icon-original.png": {
+    "title": "Ikona · oryginał PNG",
+    "origin": "Oryginalny materiał marki z folderu Images",
+    "status": "variant"
+  },
+  "marketing/chrome-web-store/promo-marquee-1400x560-alternative.png": {
+    "title": "Chrome Web Store · duży banner, wariant",
+    "origin": "Oryginalny materiał marki z folderu Images",
+    "status": "variant"
+  },
+  "screenshots/07-script-workflow-inspector.png": {
+    "aliases": [
+      "02-script-workflow-inspector-1280x800.png"
+    ],
+    "usage": [
+      "Landing page",
+      "Chrome Web Store"
+    ]
+  },
+  "screenshots/08-change-plans.png": {
+    "aliases": [
+      "04-change-plans-1280x800.png"
+    ],
+    "usage": [
+      "Landing page",
+      "Chrome Web Store"
+    ]
+  },
+  "screenshots/05-synchronization.png": {
+    "aliases": [
+      "06-synchronization-1280x800.png"
+    ],
+    "usage": [
+      "Landing page",
+      "Chrome Web Store"
+    ]
+  },
+  "screenshots/04-compare.png": {
+    "aliases": [
+      "05-compare-1280x800.png"
+    ],
+    "usage": [
+      "Landing page",
+      "Chrome Web Store"
+    ]
+  },
+  "screenshots/02-catalogue.png": {
+    "aliases": [
+      "03-catalogue-1280x800.png"
+    ],
+    "usage": [
+      "Landing page",
+      "Chrome Web Store"
+    ]
+  },
+  "screenshots/03-record-explorer.png": {
+    "aliases": [
+      "01-record-explorer-1280x800.png"
+    ],
+    "usage": [
+      "Landing page",
+      "Chrome Web Store"
+    ]
+  },
+  "archive/store/06-favorites-1280x800.png": {
+    "title": "Archiwum · 06 favorites 1280x800",
+    "origin": "Starszy zrzut SuiteCraft Lab · dane demonstracyjne",
+    "status": "archive"
+  },
+  "archive/store/02-catalogue-1280x800.png": {
+    "title": "Archiwum · 02 catalogue 1280x800",
+    "origin": "Starszy zrzut SuiteCraft Lab · dane demonstracyjne",
+    "status": "archive"
+  },
+  "archive/store/05-synchronization-1280x800.png": {
+    "title": "Archiwum · 05 synchronization 1280x800",
+    "origin": "Starszy zrzut SuiteCraft Lab · dane demonstracyjne",
+    "status": "archive"
+  },
+  "archive/store/04-compare-1280x800.png": {
+    "title": "Archiwum · 04 compare 1280x800",
+    "origin": "Starszy zrzut SuiteCraft Lab · dane demonstracyjne",
+    "status": "archive"
+  },
+  "archive/store/03-record-object-1280x800.png": {
+    "title": "Archiwum · 03 record object 1280x800",
+    "origin": "Starszy zrzut SuiteCraft Lab · dane demonstracyjne",
+    "status": "archive"
+  },
+  "archive/website/05-synchronization.png": {
+    "title": "Archiwum · 05 synchronization",
+    "origin": "Starszy zrzut SuiteCraft Lab · dane demonstracyjne",
+    "status": "archive"
+  },
+  "screenshots/source/01-quick-access-portrait.png": {
+    "aliases": [
+      "01-quick-access.png"
+    ],
+    "title": "Quick Access · starszy kadr źródłowy",
+    "status": "archive",
+    "origin": "Starszy SuiteCraft Lab · dane demonstracyjne"
+  },
+  "archive/website/04-compare.png": {
+    "title": "Archiwum · 04 compare",
+    "origin": "Starszy zrzut SuiteCraft Lab · dane demonstracyjne",
+    "status": "archive"
+  },
+  "screenshots/03-record-object.png": {
+    "aliases": [
+      "03-record-object.png"
+    ],
+    "title": "Record Explorer · starszy kadr",
+    "status": "archive",
+    "origin": "Starszy SuiteCraft Lab · dane demonstracyjne"
+  },
+  "archive/website/06-favorites.png": {
+    "title": "Archiwum · 06 favorites",
+    "origin": "Starszy zrzut SuiteCraft Lab · dane demonstracyjne",
+    "status": "archive"
+  },
+  "archive/website/02-catalogue.png": {
+    "title": "Archiwum · 02 catalogue",
+    "origin": "Starszy zrzut SuiteCraft Lab · dane demonstracyjne",
+    "status": "archive"
+  },
+  "previews/catalogue-demo/suitecraft-catalogue-dark.png": {
+    "title": "Demo Catalogue · dark",
+    "origin": "Podgląd interaktywnego demo · fikcyjne dane Northstar",
+    "status": "preview"
+  },
+  "previews/catalogue-demo/suitecraft-catalogue-desktop.png": {
+    "title": "Demo Catalogue · desktop",
+    "origin": "Podgląd interaktywnego demo · fikcyjne dane Northstar",
+    "status": "preview"
+  },
+  "previews/catalogue-demo/suitecraft-catalogue-expanded.png": {
+    "title": "Demo Catalogue · expanded",
+    "origin": "Podgląd interaktywnego demo · fikcyjne dane Northstar",
+    "status": "preview"
+  },
+  "previews/catalogue-demo/suitecraft-catalogue-mobile-result.png": {
+    "title": "Demo Catalogue · mobile result",
+    "origin": "Podgląd interaktywnego demo · fikcyjne dane Northstar",
+    "status": "preview"
+  },
+  "previews/catalogue-demo/suitecraft-catalogue-mobile-top.png": {
+    "title": "Demo Catalogue · mobile top",
+    "origin": "Podgląd interaktywnego demo · fikcyjne dane Northstar",
+    "status": "preview"
+  },
+  "previews/landing-page/suitecraft-about-desktop.png": {
+    "title": "Landing page · desktop",
+    "origin": "Podgląd sekcji About strony SuiteCraft",
+    "status": "preview"
+  },
+  "previews/landing-page/suitecraft-about-mobile.png": {
+    "title": "Landing page · mobile",
+    "origin": "Podgląd sekcji About strony SuiteCraft",
+    "status": "preview"
+  },
+  "social/suitecraft-linkedin-banner-1512x256.png": {
+    "title": "LinkedIn · banner strony SuiteCraft",
+    "status": "ready",
+    "origin": "Natywna grafika marki · październik 2026"
+  },
+  "social/suitecraft-linkedin-banner-1512x256.svg": {
+    "title": "LinkedIn · edytowalny banner SVG",
+    "status": "source",
+    "origin": "Wektorowy oryginał banneru LinkedIn"
+  },
+  "damian-krolikowski.jpg": {
+    "title": "Damian Królikowski · zdjęcie autora",
+    "status": "ready",
+    "origin": "Istniejące publiczne zdjęcie autora landing page"
+  },
+  "screenshots/01-quick-access.png": {
+    "origin": "Kadr publiczny z anonimizacją · fikcyjne dane Northstar; szczegóły w screenshots/source/"
+  },
+  "screenshots/09-navigation-search.png": {
+    "origin": "Kadr publiczny z anonimizacją · fikcyjne dane Northstar; szczegóły w screenshots/source/"
+  }
+}

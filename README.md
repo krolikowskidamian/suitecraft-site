@@ -53,3 +53,44 @@ Record Explorer, Inspector, Catalogue, Change Plans, Compare and Synchronization
 ## 1.0.0 release preparation
 
 Damian approved 1.0.0 and a Store build on 15 October 2026. Version 0.4.1 remains preserved in release history. At Damian’s request, the website copy is prepared for the accepted release: the hero links to “What’s new in 1.0.0”, the notes use Current release / Stable channel, and the date label is Released. These labels do not independently verify the Store’s actual approval or publication state.
+
+## Interactive Customization Workspace feature — 15 October 2026
+
+The first existing Features card contains a standalone Catalogue demo in
+`assets/catalogue-demo.js` and `assets/catalogue-demo.css`. It uses 12 fictional
+objects across two Northstar accounts and five categories. It does not import
+extension source, connect to NetSuite, read real snapshots, save browser data
+or send demo interactions to a backend. The existing website analytics remain
+separate.
+
+The walkthrough runs once when the demo becomes visible, ending at the Approval
+Guard script. Visitors can search names, Script IDs or Internal IDs, combine
+account/category filters, select a result, switch its light/dark theme and expand
+it into a native dialog. User interaction cancels playback; Replay starts a fresh
+walkthrough. Playback stops when the inline demo leaves the viewport or the page
+becomes hidden. Reduced-motion users get the completed example without autoplay.
+Without JavaScript, the first card shows the existing Catalogue screenshot.
+
+The other Features cards and the hidden legacy `#previews` section remain as they
+were. This implements only the first scene of D4, not the full feature-animation
+backlog. Keep sample labels and supported interactions consistent with the real
+Catalogue when its UI changes.
+
+Browser verification covers search and combined filters, empty results, keyboard
+selection, interruption of playback, light/dark, dialog Escape/focus return,
+390 px layout and initial reduced-motion behavior. Preview with
+`index.html#workspace-feature`.
+
+## Biblioteka grafik
+
+Wszystkie zebrane grafiki mają wspólny podgląd w [assets/index.html](assets/index.html):
+logo i ikony, bannery LinkedIn / Buy Me a Coffee, materiały Chrome Web Store,
+aktualne screenshoty, warianty archiwalne i podglądy projektu. Galeria działa
+lokalnie po otwarciu pliku; można wyszukiwać, filtrować, powiększać i pobierać
+oryginały. [Indeks assets](assets/README.md) opisuje strukturę i pochodzenie.
+
+Po dodaniu nowej grafiki uruchom `python3 scripts/build-asset-gallery.py`.
+Nazwy i pochodzenie można uzupełnić w `assets/metadata.json`. Importowane pliki
+są kopiami materiałów publicznych lub demonstracyjnych; ścieżki używane przez
+landing page pozostają bez zmian. Biblioteka nie zawiera źródeł rozszerzenia
+ani surowych zrzutów z kont klientów.

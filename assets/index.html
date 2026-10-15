@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>SuiteCraft — biblioteka grafik</title>
+<link rel="icon" href="brand/icons/icon-32.png">
+<link rel="stylesheet" href="gallery.css">
+<script src="gallery-data.js" defer></script>
+<script src="gallery.js" defer></script>
+</head>
+<body>
+<header class="library-header">
+ <nav class="wrap"><a class="brand" href="../index.html"><img src="brand/suitecraft-mark-on-dark.svg" width="42" height="34" alt=""><span>SuiteCraft <small>Biblioteka materiałów</small></span></a><a class="back-link" href="../index.html">Wróć do strony ↗</a></nav>
+ <div class="wrap hero"><div><p class="eyebrow">ASSETS / SUITECRAFT</p><h1>Wszystkie grafiki.<br><span>Jedno miejsce.</span></h1><p class="intro">Logo, bannery, materiały promocyjne i screenshoty. Oryginały gotowe do pobrania, z wymiarami i pełnym podglądem.</p></div><div class="library-summary"><strong id="total-assets">—</strong><span>grafiki w bibliotece</span><div><span id="total-size">—</span><span>PNG · SVG · JPG</span></div><a href="README.md">Indeks plików i pochodzenie ↗</a></div></div>
+ <div class="wrap highlights" id="highlights" aria-label="Wybrane materiały"></div>
+</header>
+<main class="wrap library-main">
+ <div class="toolbar">
+  <div class="toolbar-fields"><label class="search-label"><span>Szukaj grafiki</span><input id="asset-search" type="search" placeholder="LinkedIn, logo, Catalogue…" autocomplete="off"></label><label><span>Wersja</span><select id="asset-status"><option value="all">Wszystkie wersje</option><option value="ready">Gotowe do użycia</option><option value="brand">Zestaw marki</option><option value="source">Pliki źródłowe</option><option value="variant">Warianty</option><option value="preview">Podglądy projektu</option><option value="archive">Archiwum</option></select></label><label><span>Sortuj</span><select id="asset-sort"><option value="category">Według kategorii</option><option value="name">Nazwa A–Z</option><option value="size">Największe pliki</option><option value="width">Najszersze grafiki</option></select></label><button id="preview-background" class="background-toggle" type="button" aria-pressed="false">Ciemne tło podglądu</button></div>
+  <div id="category-filters" class="categories" role="group" aria-label="Kategorie grafik"></div>
+ </div>
+ <div class="results-heading"><p id="result-count" role="status" aria-live="polite"></p><span>Kliknij miniaturę, aby powiększyć</span></div>
+ <div id="asset-grid" class="asset-grid"></div>
+ <div id="empty-state" class="empty-state" hidden><h2>Nie znaleziono grafik</h2><p>Zmień wyszukiwanie lub wybraną kategorię.</p><button id="reset-filters" type="button">Wyczyść filtry</button></div>
+ <noscript><p>Podgląd interaktywny wymaga JavaScript. Wszystkie pliki znajdziesz w <a href="README.md">indeksie grafik</a>.</p></noscript>
+</main>
+<footer class="wrap library-footer"><span>SuiteCraft · biblioteka grafik</span><a href="catalog.json">Katalog JSON ↗</a></footer>
+<dialog id="asset-dialog" aria-labelledby="dialog-title">
+ <div class="dialog-header"><div><p id="dialog-category" class="eyebrow"></p><h2 id="dialog-title"></h2></div><button id="dialog-close" type="button" aria-label="Zamknij podgląd">Zamknij ×</button></div>
+ <div class="dialog-image-wrap"><img id="dialog-image" alt=""></div>
+ <div class="dialog-details"><div><p id="dialog-meta"></p><code id="dialog-path"></code><p id="dialog-origin"></p></div><div class="dialog-links"><a id="dialog-open" target="_blank" rel="noopener">Otwórz oryginał ↗</a><a id="dialog-download" class="primary" download>Pobierz plik ↓</a></div></div>
+ <div class="dialog-navigation"><button id="dialog-prev" type="button">← Poprzednia</button><span id="dialog-position"></span><button id="dialog-next" type="button">Następna →</button></div>
+</dialog>
+</body>
+</html>

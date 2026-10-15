@@ -14,6 +14,7 @@
 	<link rel="icon" href="assets/suitecraft-mark.svg" type="image/svg+xml">
 	<link rel="stylesheet" href="assets/site.css">
 	<link rel="stylesheet" href="assets/previews.css">
+	<link rel="stylesheet" href="assets/catalogue-demo.css">
 </head>
 <body>
 	<a class="skip-link" href="#main">Skip to content</a>
@@ -113,7 +114,23 @@
 				<p>Focused tools for administrators, developers and consultants who want to understand an account faster and repeat fewer manual steps.</p>
 			</div>
 			<div class="feature-grid">
-				<article class="feature-card featured"><span class="feature-number">01</span><div class="feature-icon">⌕</div><h3>Customization Workspace</h3><p>Search fields, custom records, lists, scripts and workflows from locally stored account snapshots.</p><ul><li>Account-scoped catalogue</li><li>Manual synchronization</li><li>CSV, Excel and JSON export</li></ul></article>
+				<article class="feature-card featured workspace-feature" id="workspace-feature">
+					<div class="workspace-feature-copy"><span class="feature-number">01</span><div class="feature-icon" aria-hidden="true">⌕</div><h3>Customization Workspace</h3><p>Search fields, custom records, lists, scripts and workflows from locally stored account snapshots.</p><ul><li>Account-scoped catalogue</li><li>Manual synchronization</li><li>CSV, Excel and JSON export</li></ul><p class="workspace-feature-invitation">Find a customization.<br>See the details behind it.</p><p class="workspace-feature-help">Try the search and filters, then select a result.</p></div>
+					<div class="workspace-demo-home">
+						<div class="workspace-demo" id="workspace-demo" hidden>
+							<div class="workspace-demo-controls"><span>INTERACTIVE DEMO</span><div><button type="button" data-demo-play>Play walkthrough</button><button type="button" data-demo-theme aria-pressed="false">Dark theme</button><button type="button" data-demo-expand aria-haspopup="dialog">Expand ↗</button></div></div>
+							<div class="catalogue-demo" data-demo-surface>
+								<header class="catalogue-demo-header"><img src="assets/suitecraft-mark.svg" alt=""><div><strong>Catalogue</strong><span>SuiteCraft Workspace</span></div><span class="catalogue-demo-local">LOCAL COPY</span></header>
+								<div class="catalogue-demo-filters"><label>Account / environment<select data-demo-account><option value="all">All local accounts</option><option value="sandbox">northstar-sandbox</option><option value="production">northstar-production</option></select></label><label>Category<select data-demo-category><option value="all">All categories</option><option value="fields">Fields</option><option value="records">Custom Record Types</option><option value="lists">Custom Lists</option><option value="scripts">Scripts</option><option value="workflows">Workflows</option></select></label><label class="catalogue-demo-search">Search<input type="search" data-demo-search placeholder="Name, Script ID, Internal ID…" autocomplete="off" spellcheck="false"></label></div>
+								<div class="catalogue-demo-count" data-demo-count></div>
+								<div class="catalogue-demo-content"><div class="catalogue-demo-results"><table><caption class="sr-only">Sample customizations. Select a name to inspect its details.</caption><thead><tr><th scope="col">Name / Script ID</th><th scope="col">Type / account</th></tr></thead><tbody data-demo-rows></tbody></table><p class="catalogue-demo-empty" data-demo-empty hidden>No matches. Try a name such as “approval” or choose another category.</p></div><aside class="catalogue-demo-detail" data-demo-detail aria-label="Selected customization details"></aside></div>
+								<span class="catalogue-demo-cursor" aria-hidden="true" hidden><svg viewBox="0 0 24 30"><path d="M2.2 1.8v22.1l5.8-5.2 4.3 9.1 4.2-2-4.2-8.7 8.1-.7L2.2 1.8Z"/></svg></span>
+							</div>
+							<p class="workspace-demo-caption"><span data-demo-caption>Choose an account, search and select a result.</span><span>Fictional sample data</span></p><span class="sr-only" role="status" aria-live="polite" data-demo-status></span>
+						</div>
+						<noscript><img class="workspace-demo-fallback" src="assets/screenshots/02-catalogue.png" alt="SuiteCraft Catalogue with search filters and customization details"></noscript>
+					</div>
+				</article>
 				<article class="feature-card"><span class="feature-number">02</span><div class="feature-icon">{ }</div><h3>Record Explorer</h3><p>Inspect body fields, sublists and current values, filter native and custom fields, and open synchronized field definitions.</p></article>
 				<article class="feature-card"><span class="feature-number">03</span><div class="feature-icon">⌁</div><h3>Script &amp; Workflow Inspector</h3><p>See scripts, deployments and workflows linked to the current record type, with IDs, entry points and workflow activity.</p></article>
 				<article class="feature-card"><span class="feature-number">04</span><div class="feature-icon">◇</div><h3>Compare snapshots</h3><p>See what was added, removed or changed between environments or points in time, down to practical properties and SDF XML.</p></article>
@@ -175,6 +192,7 @@
 	</footer>
 	<script src="assets/site.js"></script>
 	<script src="assets/previews.js"></script>
+	<script src="assets/catalogue-demo.js"></script>
 	<script src="assets/analytics.js"></script>
 </body>
 </html>
