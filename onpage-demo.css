@@ -39,3 +39,5 @@
 @media(max-width:720px){.op-guide-labels{grid-template-columns:1fr;gap:14px;padding:16px;margin-bottom:16px}.op-guide-labels strong{font-size:11px}.op-guide-labels p{font-size:10px}.op-guide-controls>span{font-size:7px;letter-spacing:.6px}.op-guide-controls button{font-size:9px;white-space:nowrap}.op-guide-ring{border-width:2px;box-shadow:0 0 0 3px #bb9de326}.op-guide-ring>span{width:17px;height:17px;font-size:8px;right:-7px;top:-9px}}
 
 .op-netsuite-nav .op-native-icons .op-native-star{display:grid;place-items:center;width:24px;height:30px;padding:0;flex-shrink:0;cursor:default;pointer-events:none}
+
+.op-netsuite-nav .op-native-icons button,.op-netsuite-nav .op-native-icons .op-native-star{cursor:default}
