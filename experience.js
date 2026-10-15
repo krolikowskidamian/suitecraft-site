@@ -18,6 +18,7 @@
  'close-screenshot':['Close screenshot','Return to the page. Escape also closes the enlarged screenshot.'], 'tour-previous':['Previous screen','Move to the previous product screen in the tour.'], 'tour-next':['Next screen','Move to the next product screen in the tour.']
  };
  function describe(el){
+  if(el.closest('.op-native-icons'))return null;
   if(el.dataset.workspaceTab)return workspace[el.dataset.workspaceTab];
   if(el.dataset.opTool)return tools[el.dataset.opTool];
   if(el.dataset.popupScene)return scenes[el.dataset.popupScene];
