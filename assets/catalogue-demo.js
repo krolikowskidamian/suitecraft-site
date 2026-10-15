@@ -36,7 +36,7 @@
 	async function point(target,signal){if(signal.aborted)return;demo.querySelectorAll('.is-demo-target').forEach(value=>value.classList.remove('is-demo-target'));const a=target.getBoundingClientRect(),b=surface.getBoundingClientRect();cursor.hidden=false;cursor.style.setProperty('--demo-x',`${a.left-b.left+Math.min(a.width*.65,100)}px`);cursor.style.setProperty('--demo-y',`${a.top-b.top+a.height*.6}px`);target.classList.add('is-demo-target');await wait(550,signal);if(signal.aborted)return;cursor.classList.add('is-clicking');await wait(350,signal);cursor.classList.remove('is-clicking');}
 	function finalScene(){playButton.textContent='Replay walkthrough';account.value='sandbox';category.value='scripts';search.value='approval';selected='sandbox-approval-script';render();caption.textContent='One match. Its Script ID and saved details, together.';}
 	async function play(){
-		stop();played=true;if(reduceMotion.matches){finalScene();status.textContent='Walkthrough result shown with reduced motion.';return;}
+		demo.dispatchEvent(new CustomEvent('show-catalogue'));stop();played=true;if(reduceMotion.matches){finalScene();status.textContent='Walkthrough result shown with reduced motion.';return;}
 		const run=new AbortController(),signal=run.signal;controller=run;playButton.textContent='Pause';account.value='all';category.value='all';search.value='';selected=null;render();
 		try{
 			caption.textContent='1 / 4 · Choose a saved account.';await wait(500,signal);if(signal.aborted)return;await point(account,signal);if(signal.aborted)return;account.value='sandbox';render();

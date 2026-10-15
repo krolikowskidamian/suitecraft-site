@@ -15,44 +15,49 @@
 	<link rel="stylesheet" href="assets/site.css">
 	<link rel="stylesheet" href="assets/previews.css">
 	<link rel="stylesheet" href="assets/catalogue-demo.css">
+<link rel="stylesheet" href="concept.css"><link rel="stylesheet" href="workspace-demos.css"><link rel="stylesheet" href="popup-demo.css"><link rel="stylesheet" href="onpage-demo.css"><link rel="stylesheet" href="experience.css">
 </head>
 <body>
+
 	<a class="skip-link" href="#main">Skip to content</a>
-	<header class="site-header">
+	<div class="header-slot"><header class="site-header">
 		<a class="brand" href="#top" aria-label="SuiteCraft home">
-			<img src="assets/suitecraft-mark.svg" alt="">
+			<img src="assets/brand/suitecraft-mark-on-dark.svg" alt="">
 			<span><strong>SuiteCraft</strong><small>Toolkit for NetSuite</small></span>
 		</a>
 		<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
 		<nav id="site-nav" aria-label="Main navigation">
-			<a href="#tour">Product tour</a>
-			<a href="#features">Features</a>
-			<a href="#changelog">Changelog</a>
-			<a href="#about">About</a>
-			<a href="privacy.html">Privacy <span aria-hidden="true">↗</span></a>
-			<a class="nav-cta" href="https://chromewebstore.google.com/detail/suitecraft-for-netsuite/hpcgajocaokahoibhmiofdjdjnnielka" target="_blank" rel="noopener noreferrer">Install extension <span aria-hidden="true">↗</span></a>
-		</nav>
-	</header>
+<a href="#workspace">Workspace</a>
+<a href="#popup-demo">Popup</a>
+<a href="#onpage-demo">On-page tools</a>
+<a href="#tour">Gallery</a>
+<a href="#all-features">Features</a>
+<a href="#privacy">Privacy</a>
+<a href="#changelog">Changelog</a>
+<a class="nav-cta" href="https://chromewebstore.google.com/detail/suitecraft-for-netsuite/hpcgajocaokahoibhmiofdjdjnnielka" target="_blank" rel="noopener noreferrer">Install extension</a>
+<a href="#about">About</a>
+</nav>
+	</header></div>
 
 	<main id="main">
-		<section class="hero" id="top">
+		<section class="hero" id="top"><div class="scene" aria-hidden="true"><div class="ambient"></div><canvas id="field"></canvas></div>
 			<div class="hero-copy">
 				<p class="eyebrow"><span></span> Built for people who work in NetSuite</p>
-				<h1>Less clicking.<br><em>More clarity.</em></h1>
+				<h1>Less clicking.<br>More <em>clarity.</em></h1>
 				<p class="hero-lead">SuiteCraft brings record inspection, customization discovery, local snapshots and comparison tools into one focused browser workspace.</p>
 				<div class="hero-actions">
 					<a class="button primary" href="https://chromewebstore.google.com/detail/suitecraft-for-netsuite/hpcgajocaokahoibhmiofdjdjnnielka" target="_blank" rel="noopener noreferrer">Install from Chrome Web Store <span aria-hidden="true">↗</span></a>
-					<a class="button secondary" href="#tour">See SuiteCraft in action</a>
+					<a class="button secondary" href="#workspace">See SuiteCraft in action</a>
 				</div>
 				<p class="compatibility"><span aria-hidden="true">◆</span> Designed for Chrome and Brave · Runs locally in your browser</p>
 				<a class="release-chip" href="#changelog">What’s new in 1.0.0 <span aria-hidden="true">→</span></a>
 			</div>
 			<div class="hero-visual" aria-label="SuiteCraft interface preview">
 				<div class="glow"></div>
-				<div class="browser-card">
+				<button class="browser-card screenshot-open" type="button" aria-label="Enlarge Change Plans screenshot" data-image="assets/screenshots/08-change-plans.png" data-title="Change Plans — release readiness">
 					<div class="browser-bar"><i></i><i></i><i></i><span>SuiteCraft Workspace</span></div>
 					<img class="hero-product-screen" src="assets/screenshots/08-change-plans.png" alt="SuiteCraft Change Plan release readiness interface">
-				</div>
+				<span class="image-hint">Explore the details ↗</span></button>
 			</div>
 		</section>
 
@@ -85,15 +90,71 @@
 			<p class="preview-hint"><span aria-hidden="true">↗</span> Hover a card to play · Focus or tap for touch and keyboard</p>
 		</section>
 
-		<section class="section product-tour" id="tour">
+
+		<section class="section features" id="features">
+			<div class="section-heading">
+				<div><p class="eyebrow">ONE PRACTICAL TOOLKIT</p><h2>Everything you need,<br>close at hand.</h2></div>
+				<p>Focused tools for administrators, developers and consultants who want to understand an account faster and repeat fewer manual steps.</p>
+			</div>
+			<div class="feature-grid">
+				<article class="feature-card featured workspace-feature" id="workspace-feature">
+					<div class="workspace-feature-copy"><span class="feature-number">01</span><div class="feature-icon" aria-hidden="true">⌕</div><h3>Customization Workspace</h3><p>Search fields, custom records, lists, scripts and workflows from locally stored account snapshots.</p><ul><li>Account-scoped catalogue</li><li>Manual synchronization</li><li>CSV, Excel and JSON export</li></ul><p class="workspace-feature-invitation">Find a customization.<br>See the details behind it.</p><p class="workspace-feature-help">Try the search and filters, then select a result.</p></div>
+					<div class="workspace-demo-home" id="workspace">
+						<div class="workspace-demo" id="workspace-demo" hidden>
+							<div class="workspace-demo-controls"><span>INTERACTIVE DEMO</span><div><button type="button" data-demo-play>Play walkthrough</button><button type="button" data-demo-theme aria-pressed="false">Dark theme</button><button type="button" data-demo-expand aria-haspopup="dialog">Expand ↗</button></div></div>
+							<div class="catalogue-demo" data-demo-surface>
+								<header class="catalogue-demo-header"><img src="assets/brand/suitecraft-mark-on-dark.svg" alt=""><div><strong>SuiteCraft Workspace</strong><span>Catalogue, favorites, plans, compare & sync</span></div><span class="catalogue-demo-local">LOCAL COPY</span></header>
+<div class="demo-connection"><span>● &nbsp; Sample workspace · offline preview</span><span>LOCAL · READ ONLY</span></div>
+<div class="workspace-nav" role="tablist" aria-label="Workspace preview sections">
+<button type="button" role="tab" id="workspace-tab-catalogue" aria-controls="workspace-panel-catalogue" aria-selected="true" tabindex="0" data-workspace-tab="catalogue"><span class="ws-icon">▦</span><span><strong>Catalogue</strong><small>Browse local metadata</small></span></button><button type="button" role="tab" id="workspace-tab-lists" aria-controls="workspace-panel-lists" aria-selected="false" tabindex="-1" data-workspace-tab="lists"><span class="ws-icon">☷</span><span><strong>Lists</strong><small>Reference values & IDs</small></span></button><button type="button" role="tab" id="workspace-tab-favorites" aria-controls="workspace-panel-favorites" aria-selected="false" tabindex="-1" data-workspace-tab="favorites"><span class="ws-icon">★</span><span><strong>Favorites</strong><small>Saved objects & notes</small></span></button><button type="button" role="tab" id="workspace-tab-plans" aria-controls="workspace-panel-plans" aria-selected="false" tabindex="-1" data-workspace-tab="plans"><span class="ws-icon">▣</span><span><strong>Change Plans</strong><small>Release checklists</small></span></button><button type="button" role="tab" id="workspace-tab-compare" aria-controls="workspace-panel-compare" aria-selected="false" tabindex="-1" data-workspace-tab="compare"><span class="ws-icon">⇄</span><span><strong>Compare</strong><small>Compare snapshots</small></span></button><button type="button" role="tab" id="workspace-tab-sync" aria-controls="workspace-panel-sync" aria-selected="false" tabindex="-1" data-workspace-tab="sync"><span class="ws-icon">↻</span><span><strong>Synchronization</strong><small>Manage local data</small></span></button></div><div class="demo-activity"><span>› &nbsp; <strong>Activity log</strong> &nbsp; Ready. Explore the sample data below.</span><span>Idle</span></div><div id="workspace-panel-catalogue" class="workspace-panel" role="tabpanel" aria-labelledby="workspace-tab-catalogue"><div class="workspace-panel-heading"><span>EXPLORE</span><h3>Catalogue</h3><p>Search and inspect metadata stored locally for your NetSuite accounts.</p></div>
+								<div class="catalogue-demo-filters"><label>Account / environment<select data-demo-account><option value="all">All local accounts</option><option value="sandbox">northstar-sandbox</option><option value="production">northstar-production</option></select></label><label>Category<select data-demo-category><option value="all">All categories</option><option value="fields">Fields</option><option value="records">Custom Record Types</option><option value="lists">Custom Lists</option><option value="scripts">Scripts</option><option value="workflows">Workflows</option></select></label><label class="catalogue-demo-search">Search<input type="search" data-demo-search placeholder="Name, Script ID, Internal ID…" autocomplete="off" spellcheck="false"></label></div>
+								<div class="catalogue-demo-count" data-demo-count></div>
+								<div class="catalogue-demo-content"><div class="catalogue-demo-results"><table><caption class="sr-only">Sample customizations. Select a name to inspect its details.</caption><thead><tr><th scope="col">Name / Script ID</th><th scope="col">Type / account</th></tr></thead><tbody data-demo-rows></tbody></table><p class="catalogue-demo-empty" data-demo-empty hidden>No matches. Try a name such as “approval” or choose another category.</p></div><aside class="catalogue-demo-detail" data-demo-detail aria-label="Selected customization details"></aside></div></div><div id="workspace-panel-lists" class="workspace-panel workspace-screen-panel" role="tabpanel" aria-labelledby="workspace-tab-lists" hidden><div class="workspace-panel-heading"><span>PRODUCT PREVIEW</span><h3>Lists & reference data</h3><p>Actual SuiteCraft interface with fictional sample data. Click the image to enlarge.</p></div><button class="screenshot-open" type="button" data-image="assets/screenshots/10-reference-lists.png" data-title="Lists & reference data" aria-label="Enlarge Lists & reference data screenshot"><img src="assets/screenshots/10-reference-lists.png" alt="SuiteCraft Lists & reference data with synthetic data" loading="lazy"><span class="image-hint">Enlarge screenshot ↗</span></button></div><div id="workspace-panel-favorites" class="workspace-panel workspace-screen-panel" role="tabpanel" aria-labelledby="workspace-tab-favorites" hidden><div class="workspace-panel-heading"><span>PRODUCT PREVIEW</span><h3>Account favorites</h3><p>Actual SuiteCraft interface with fictional sample data. Click the image to enlarge.</p></div><button class="screenshot-open" type="button" data-image="assets/screenshots/06-favorites.png" data-title="Account favorites" aria-label="Enlarge Account favorites screenshot"><img src="assets/screenshots/06-favorites.png" alt="SuiteCraft Account favorites with synthetic data" loading="lazy"><span class="image-hint">Enlarge screenshot ↗</span></button></div><div id="workspace-panel-plans" class="workspace-panel workspace-screen-panel" role="tabpanel" aria-labelledby="workspace-tab-plans" hidden><div class="workspace-panel-heading"><span>PRODUCT PREVIEW</span><h3>Change Plans</h3><p>Actual SuiteCraft interface with fictional sample data. Click the image to enlarge.</p></div><button class="screenshot-open" type="button" data-image="assets/screenshots/08-change-plans.png" data-title="Change Plans" aria-label="Enlarge Change Plans screenshot"><img src="assets/screenshots/08-change-plans.png" alt="SuiteCraft Change Plans with synthetic data" loading="lazy"><span class="image-hint">Enlarge screenshot ↗</span></button></div><div id="workspace-panel-compare" class="workspace-panel workspace-screen-panel" role="tabpanel" aria-labelledby="workspace-tab-compare" hidden><div class="workspace-panel-heading"><span>PRODUCT PREVIEW</span><h3>Compare snapshots</h3><p>Actual SuiteCraft interface with fictional sample data. Click the image to enlarge.</p></div><button class="screenshot-open" type="button" data-image="assets/screenshots/04-compare.png" data-title="Compare snapshots" aria-label="Enlarge Compare snapshots screenshot"><img src="assets/screenshots/04-compare.png" alt="SuiteCraft Compare snapshots with synthetic data" loading="lazy"><span class="image-hint">Enlarge screenshot ↗</span></button></div><div id="workspace-panel-sync" class="workspace-panel workspace-screen-panel" role="tabpanel" aria-labelledby="workspace-tab-sync" hidden><div class="workspace-panel-heading"><span>PRODUCT PREVIEW</span><h3>Synchronization</h3><p>Actual SuiteCraft interface with fictional sample data. Click the image to enlarge.</p></div><button class="screenshot-open" type="button" data-image="assets/screenshots/05-synchronization.png" data-title="Synchronization" aria-label="Enlarge Synchronization screenshot"><img src="assets/screenshots/05-synchronization.png" alt="SuiteCraft Synchronization with synthetic data" loading="lazy"><span class="image-hint">Enlarge screenshot ↗</span></button></div>
+								<span class="catalogue-demo-cursor" aria-hidden="true" hidden><svg viewBox="0 0 24 30"><path d="M2.2 1.8v22.1l5.8-5.2 4.3 9.1 4.2-2-4.2-8.7 8.1-.7L2.2 1.8Z"/></svg></span>
+							</div>
+							<p class="workspace-demo-caption"><span data-demo-caption>Choose an account, search and select a result.</span><span>Fictional sample data</span></p><span class="sr-only" role="status" aria-live="polite" data-demo-status></span>
+						</div>
+						<noscript><img class="workspace-demo-fallback" src="assets/screenshots/02-catalogue.png" alt="SuiteCraft Catalogue with search filters and customization details"></noscript>
+					</div>
+				</article>
+<section class="popup-showcase" id="popup-demo" aria-labelledby="popup-demo-title">
+ <div class="popup-story"><p class="eyebrow">SMALL WINDOW. PRACTICAL SHORTCUTS.</p><h2 id="popup-demo-title">Your daily tools.<br><em>One click away.</em></h2><p>Meet the SuiteCraft popup. Find a record, search saved customizations or reach your favorite objects without losing your place.</p><div class="popup-scenes" role="group" aria-label="Choose a popup demo scene"><button type="button" data-popup-scene="home" aria-pressed="true"><span>01</span><div><strong>Your starting point</strong><small>A familiar menu, close to your work.</small></div><b>↗</b></button><button type="button" data-popup-scene="find" aria-pressed="false"><span>02</span><div><strong>Quick find record</strong><small>Choose a type and try a sample ID.</small></div><b>↗</b></button><button type="button" data-popup-scene="custom" aria-pressed="false"><span>03</span><div><strong>Search customizations</strong><small>Find a saved script, field or workflow.</small></div><b>↗</b></button><button type="button" data-popup-scene="lists" aria-pressed="false"><span>04</span><div><strong>Search list values</strong><small>Find an option and copy its Internal ID.</small></div><b>↗</b></button><button type="button" data-popup-scene="favorites" aria-pressed="false"><span>05</span><div><strong>Favorites at your fingertips</strong><small>Search saved objects and their notes.</small></div><b>↗</b></button><button type="button" data-popup-scene="urls" aria-pressed="false"><span>06</span><div><strong>System & Debugger</strong><small>Explore the two sample URL formats.</small></div><b>↗</b></button></div><p class="popup-fine">Interactive preview · Fictional data<br>No NetSuite connection. Your real account is untouched.</p></div>
+ <div class="popup-demo-column"><div class="popup-preview-label"><span>SUITECRAFT / POPUP</span><button type="button" id="popup-reset">Reset demo ↻</button></div><div class="popup-shell">
+ <header class="pp-header"><img src="assets/brand/suitecraft-mark-on-dark.svg" alt=""><div><strong>SuiteCraft</strong><span>Toolkit for NetSuite</span></div><a href="#top" aria-label="SuiteCraft website" title="SuiteCraft website"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M4 9h16M4 15h16M12 3.5c4 5 4 12 0 17-4-5-4-12 0-17Z"/></svg></a><a href="https://buymeacoffee.com/damiandk" target="_blank" rel="noopener noreferrer" aria-label="Support SuiteCraft" title="Support SuiteCraft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M5 8h12v7a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5V8Z M17 10h1a3 3 0 0 1 0 6h-1M7 4c-1 1 1 2 0 3M12 4c-1 1 1 2 0 3"/></svg></a></header>
+ <div class="pp-body">
+ <a class="pp-workspace" href="#workspace"><span class="pp-icon">▤</span><div><strong>SuiteCraft Workspace</strong><small>Catalogue, favorites, plans, compare & sync</small></div><b>↗</b></a>
+ <h3 class="pp-kicker">QUICK ACTIONS</h3>
+ <details data-popup-panel="find"><summary><span class="pp-icon">↗</span><div><strong>Quick find record</strong><small>Choose a type, enter an ID and open</small></div><b>⌄</b></summary><div class="pp-panel"><form id="pp-find-form"><div class="pp-types" role="group" aria-label="Sample record type"></div><label>Internal ID or exact name<input id="pp-record-id" placeholder="123" required maxlength="100" autocomplete="off"></label><small>Press Enter to preview a fictional record.</small><button class="pp-primary" type="submit">Open sample record ↗</button></form><div id="pp-record-result" class="pp-result" hidden></div><p class="pp-hint">Preview only — this opens sample details inside the demo.</p></div></details>
+ <details data-popup-panel="custom"><summary><span class="pp-icon">⌕</span><div><strong>Search customizations</strong><small>Search by name, Script ID or file</small></div><b>⌄</b></summary><div class="pp-panel"><p>Search the sample account’s latest local snapshots.</p><label>Category<select id="pp-category"><option value="all">All categories</option><option value="Script">Scripts</option><option value="Field">Fields</option><option value="Workflow">Workflows</option></select></label><label>Search<input id="pp-custom-search" type="search" placeholder="Name, Script ID or Internal ID…"></label><div id="pp-custom-results" class="pp-results"></div></div></details>
+ <details data-popup-panel="lists"><summary><span class="pp-icon">▤</span><div><strong>Search list values</strong><small>Find saved options and copy Internal IDs</small></div><b>⌄</b></summary><div class="pp-panel"><label>List<select id="pp-list"><option value="delivery">Delivery Channels</option><option value="status">Project Status</option></select></label><label>Search<input id="pp-list-search" type="search" placeholder="Search names or values…"></label><div id="pp-list-results" class="pp-results"></div><div class="pp-button-row"><button type="button" id="pp-open-lists">Open all lists</button><button type="button" id="pp-update-lists">Update sample lists</button></div></div></details>
+ <details data-popup-panel="favorites" class="pp-gold"><summary><span class="pp-icon">☆</span><div><strong>Favorites</strong><small>Saved objects and private notes</small></div><b>⌄</b></summary><div class="pp-panel"><p>Showing Favorites from fictional local accounts.</p><label>Type<select id="pp-favorite-type"><option value="all">All types</option><option>Script</option><option>Custom record</option><option>Workflow</option></select></label><label>Search favorites<input id="pp-favorite-search" type="search" placeholder="Name, ID or note…"></label><div id="pp-favorite-results" class="pp-results"></div></div></details>
+ <h3 class="pp-kicker">CURRENT RECORD</h3><button class="pp-tool" type="button" id="pp-record-explorer"><span class="pp-icon">▣</span><div><strong>Record Explorer</strong><small>Fields, sublists & current values</small></div><b>›</b></button><button class="pp-tool" type="button" id="pp-inspector"><span class="pp-icon">♧</span><div><strong>Script & Workflow Inspector</strong><small>Scripts, deployments & workflows linked to this record type</small></div><b>›</b></button>
+ <h3 class="pp-kicker">NETSUITE URLS</h3><details data-popup-panel="urls" class="pp-teal"><summary><span class="pp-icon">⇄</span><div><strong>System & Debugger</strong><small>Copy or switch System and Debugger modes</small></div><b>⌄</b></summary><div class="pp-panel"><div class="pp-button-row"><button type="button" data-pp-url="copy-system">Copy System URL</button><button type="button" data-pp-url="copy-debugger">Copy Debugger URL</button><button type="button" data-pp-url="system">Switch to System</button><button type="button" data-pp-url="debugger">Switch to Debugger</button></div><label>Sample URL<input id="pp-url" readonly value="https://northstar-sandbox.app.netsuite.com/app/common/entity/custjob.nl?id=123"></label><p class="pp-hint">Switching updates this preview only.</p></div></details>
+ </div><footer class="pp-footer"><a href="#about">About & support</a><a href="#changelog">v1.0.0</a><button type="button" id="pp-settings">All settings ↗</button></footer></div><p id="pp-status" class="popup-fine" role="status" aria-live="polite">Choose a scene or explore the popup yourself.</p></div>
+</section>
+
+<section class="onpage-showcase" id="onpage-demo" aria-labelledby="onpage-title">
+ <div class="section-heading"><div><p class="eyebrow">RIGHT WHERE YOU WORK</p><h2 id="onpage-title">Stay on the record.<br>See <em>what’s behind it.</em></h2></div><p>SuiteCraft shortcuts live alongside your NetSuite work. Try search, inspect a field, explore scripts or save a reference — without leaving this sample page.</p></div>
+ <div class="op-scenes" role="group" aria-label="Choose an on-page tool"><button type="button" data-op-tool="search">⌕ SuiteCraft Search</button><button type="button" data-op-tool="explorer">▣ Record Explorer</button><button type="button" data-op-tool="inspector">♧ Script & Workflow Inspector</button><button type="button" data-op-tool="plan">▣ Add to Change Plan</button><button type="button" data-op-tool="favorite">☆ Favorites & notes</button></div>
+ <div class="op-guide-controls"><span>LOOK FOR SUITECRAFT ON THE PAGE</span><button type="button" id="op-guide-toggle" aria-pressed="true" aria-controls="op-guide-labels">Hide shortcuts</button></div>
+ <div id="op-guide-labels" class="op-guide-labels"><div><span class="op-guide-number">1</span><div><strong>Start here: SuiteCraft Search</strong><p>The SC icon in the menu finds menus, fields & Workspace data.</p></div></div><div><span class="op-guide-number">2</span><div><strong>Your tools, beside the record title</strong><p>Inspect fields and scripts, add a plan reference or save a favorite.</p></div></div></div>
+ <div class="op-browser"><div class="op-browser-bar"><span>● ● ●</span><span>northstar-sandbox · Fictional NetSuite page</span><button type="button" id="op-reset">Reset demo ↻</button></div>
+ <div class="op-page"><div class="op-account"><strong>NetSuite <small>PAGE PREVIEW</small></strong><span>NORTHSTAR <b>SANDBOX</b></span><small>Sample Administrator</small></div><nav class="op-netsuite-nav" aria-label="Sample navigation"><button type="button" data-op-tool="search" aria-label="Open SuiteCraft Search"><img src="assets/brand/suitecraft-nav-mark.svg" alt=""><span class="op-nav-search-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M16 16l5 5"/></svg></span></button><span class="op-native-icons" aria-label="NetSuite navigation icons"><button type="button" id="op-native-history" aria-label="Sample Recent Records" title="Recent Records"><svg viewBox="0 0 22 20" aria-hidden="true"><polygon points="16.17,12.849 9.17,12.849 9.17,5.849 11.17,5.849 11.17,10.849 16.17,10.849"/><path d="M12.17,1.697V0.078L7.803,2.599L12.17,5.12V3.715c3.489,0.486,6.006,3.476,6.006,7.065c0,3.926-3.306,7.142-7.231,7.142s-7.12-3.073-7.12-7.073h-2c0,5,4.091,9.073,9.12,9.073c5.028,0,9.231-4.114,9.231-9.142C20.176,6.092,16.693,2.203,12.17,1.697z"/></svg></button><button type="button" data-op-tool="favorite" aria-label="Sample Shortcuts" title="Shortcuts"><svg viewBox="0 0 22 20" aria-hidden="true"><path fill-rule="evenodd" d="M1,7.5h7l3-7l3,7h7l-6,5l2,7l-6-5l-6,5l2-7L1,7.5z"/></svg></button><button type="button" id="op-native-home" aria-label="Sample Home" title="Home"><svg viewBox="0 0 22 20" aria-hidden="true"><path fill-rule="evenodd" d="M0.5,10.5l10-10h1l10,10v2h-1l-9-9h-1l-9,9h-1V10.5zM14.5,0.5v2l3,3v-5H14.5zM11.5,5.5h-1l-7,7v7h15v-7L11.5,5.5z M13.5,16.5h-5v-5h5V16.5z"/></svg></button></span><span>Activities</span><span>Transactions</span><span class="active">Lists</span><span>Reports</span><span>Customization</span></nav>
+ <div class="op-record"><div class="op-record-heading"><div><span class="op-item-icon">▦</span><h3>Lot Numbered Inventory Item</h3></div><div class="op-shortcuts" role="group" aria-label="SuiteCraft record shortcuts"><button type="button" data-op-tool="explorer" aria-label="Open Record Explorer" title="Record Explorer">▣</button><button type="button" data-op-tool="inspector" aria-label="Open Script and Workflow Inspector" title="Script & Workflow Inspector">♧</button><button type="button" data-op-tool="plan" aria-label="Add record to sample Change Plan" title="Add to Change Plan">▣+</button><button type="button" data-op-tool="favorite" aria-label="Open record Favorites" title="Favorites">☆</button></div></div><p class="op-sku">NS-500001</p><div class="op-record-actions"><span>View mode</span><span>Actions ▾</span><span>Options ▾</span><small>FICTIONAL DATA · INTERACTIVE SHORTCUTS</small></div><div class="op-form-title">⌄ &nbsp; Primary Information</div><div class="op-fields"><div data-op-field="internalid"><span>INTERNAL ID</span><strong>123</strong></div><div data-op-field="itemid"><span>ITEM NAME / NUMBER</span><strong>NS-500001</strong></div><div data-op-field="displayname"><span>DISPLAY NAME</span><strong>Northstar Sample Item</strong></div><div data-op-field="unitstype"><span>UNITS TYPE</span><strong>Each</strong></div><div data-op-field="subsidiary"><span>SUBSIDIARY</span><strong>Northstar Studio</strong></div><div data-op-field="custitem_project_status"><span>PROJECT STATUS</span><strong>In progress</strong></div></div><div class="op-form-title">⌄ &nbsp; Financial</div><div class="op-fields"><div><span>COSTING METHOD</span><strong>Lot Numbered</strong></div><div><span>ASSET ACCOUNT</span><strong>Inventory assets</strong></div></div><div class="op-form-title">› &nbsp; Supply Chain</div><div class="op-form-title">› &nbsp; Specifications</div></div>
+ <section class="op-panel" id="op-panel" hidden aria-labelledby="op-panel-title"><header><span class="op-sc">SC</span><div><h3 id="op-panel-title">SuiteCraft Search</h3><small>northstar-sandbox · Sample record #123</small></div><button type="button" id="op-close" aria-label="Close on-page tool">×</button></header><div class="op-panel-body" id="op-panel-body"></div><footer><span id="op-panel-hint">Fictional data · Preview only</span><button type="button" id="op-close-bottom">Close</button></footer></section>
+ </div></div><p class="op-status" id="op-status" role="status" aria-live="polite">Click a shortcut beside the record title, or choose a tool above.</p>
+</section>
+
+<section class="screen-gallery" id="tour" aria-label="Full product screen gallery">
+<div class="gallery-body">
 			<div class="section-heading tour-heading">
-				<div><p class="eyebrow">SEE SUITECRAFT IN ACTION</p><h2>Built around real<br>NetSuite work.</h2></div>
-				<p>Explore SuiteCraft through real product screens that show how each tool fits into everyday NetSuite work.</p>
+				<div><p class="eyebrow">EXPLORE EVERY DETAIL</p><h2>Gallery</h2></div>
+				<p>Explore all 12 product screens, with feature descriptions and full-size previews.</p>
 			</div>
 			<div class="tour-frame">
-				<div id="tour-media" class="tour-media compact" tabindex="0" aria-label="SuiteCraft product tour. Use left and right arrow keys to change slides.">
+				<div id="tour-media" class="tour-media compact" tabindex="0" role="button" aria-label="Enlarge current screenshot. Use left and right arrow keys to change slides.">
 					<div id="tour-overview" class="tour-overview" hidden></div>
-					<img id="tour-image" class="tour-image" src="assets/screenshots/01-quick-access.png" alt="SuiteCraft Popup menu interface using fictional sample data">
+					<img id="tour-image" class="tour-image" loading="lazy" src="assets/screenshots/01-quick-access.png" alt="SuiteCraft Popup menu interface using fictional sample data">
 				</div>
 				<aside class="tour-copy" aria-live="polite">
 					<span id="tour-number">01 / 12</span>
@@ -106,32 +167,8 @@
 				</aside>
 			</div>
 			<div id="tour-tabs" class="tour-tabs" role="tablist" aria-label="SuiteCraft product tour slides"></div>
-		</section>
-
-		<section class="section features" id="features">
-			<div class="section-heading">
-				<div><p class="eyebrow">ONE PRACTICAL TOOLKIT</p><h2>Everything you need,<br>close at hand.</h2></div>
-				<p>Focused tools for administrators, developers and consultants who want to understand an account faster and repeat fewer manual steps.</p>
-			</div>
-			<div class="feature-grid">
-				<article class="feature-card featured workspace-feature" id="workspace-feature">
-					<div class="workspace-feature-copy"><span class="feature-number">01</span><div class="feature-icon" aria-hidden="true">⌕</div><h3>Customization Workspace</h3><p>Search fields, custom records, lists, scripts and workflows from locally stored account snapshots.</p><ul><li>Account-scoped catalogue</li><li>Manual synchronization</li><li>CSV, Excel and JSON export</li></ul><p class="workspace-feature-invitation">Find a customization.<br>See the details behind it.</p><p class="workspace-feature-help">Try the search and filters, then select a result.</p></div>
-					<div class="workspace-demo-home">
-						<div class="workspace-demo" id="workspace-demo" hidden>
-							<div class="workspace-demo-controls"><span>INTERACTIVE DEMO</span><div><button type="button" data-demo-play>Play walkthrough</button><button type="button" data-demo-theme aria-pressed="false">Dark theme</button><button type="button" data-demo-expand aria-haspopup="dialog">Expand ↗</button></div></div>
-							<div class="catalogue-demo" data-demo-surface>
-								<header class="catalogue-demo-header"><img src="assets/suitecraft-mark.svg" alt=""><div><strong>Catalogue</strong><span>SuiteCraft Workspace</span></div><span class="catalogue-demo-local">LOCAL COPY</span></header>
-								<div class="catalogue-demo-filters"><label>Account / environment<select data-demo-account><option value="all">All local accounts</option><option value="sandbox">northstar-sandbox</option><option value="production">northstar-production</option></select></label><label>Category<select data-demo-category><option value="all">All categories</option><option value="fields">Fields</option><option value="records">Custom Record Types</option><option value="lists">Custom Lists</option><option value="scripts">Scripts</option><option value="workflows">Workflows</option></select></label><label class="catalogue-demo-search">Search<input type="search" data-demo-search placeholder="Name, Script ID, Internal ID…" autocomplete="off" spellcheck="false"></label></div>
-								<div class="catalogue-demo-count" data-demo-count></div>
-								<div class="catalogue-demo-content"><div class="catalogue-demo-results"><table><caption class="sr-only">Sample customizations. Select a name to inspect its details.</caption><thead><tr><th scope="col">Name / Script ID</th><th scope="col">Type / account</th></tr></thead><tbody data-demo-rows></tbody></table><p class="catalogue-demo-empty" data-demo-empty hidden>No matches. Try a name such as “approval” or choose another category.</p></div><aside class="catalogue-demo-detail" data-demo-detail aria-label="Selected customization details"></aside></div>
-								<span class="catalogue-demo-cursor" aria-hidden="true" hidden><svg viewBox="0 0 24 30"><path d="M2.2 1.8v22.1l5.8-5.2 4.3 9.1 4.2-2-4.2-8.7 8.1-.7L2.2 1.8Z"/></svg></span>
-							</div>
-							<p class="workspace-demo-caption"><span data-demo-caption>Choose an account, search and select a result.</span><span>Fictional sample data</span></p><span class="sr-only" role="status" aria-live="polite" data-demo-status></span>
-						</div>
-						<noscript><img class="workspace-demo-fallback" src="assets/screenshots/02-catalogue.png" alt="SuiteCraft Catalogue with search filters and customization details"></noscript>
-					</div>
-				</article>
-				<article class="feature-card"><span class="feature-number">02</span><div class="feature-icon">{ }</div><h3>Record Explorer</h3><p>Inspect body fields, sublists and current values, filter native and custom fields, and open synchronized field definitions.</p></article>
+		</div></section>
+				<article class="feature-card" id="all-features"><span class="feature-number">02</span><div class="feature-icon">{ }</div><h3>Record Explorer</h3><p>Inspect body fields, sublists and current values, filter native and custom fields, and open synchronized field definitions.</p></article>
 				<article class="feature-card"><span class="feature-number">03</span><div class="feature-icon">⌁</div><h3>Script &amp; Workflow Inspector</h3><p>See scripts, deployments and workflows linked to the current record type, with IDs, entry points and workflow activity.</p></article>
 				<article class="feature-card"><span class="feature-number">04</span><div class="feature-icon">◇</div><h3>Compare snapshots</h3><p>See what was added, removed or changed between environments or points in time, down to practical properties and SDF XML.</p></article>
 				<article class="feature-card"><span class="feature-number">05</span><div class="feature-icon">★</div><h3>Account favorites</h3><p>Save frequently used NetSuite objects with private notes and find them quickly from the popup or Workspace.</p></article>
@@ -154,7 +191,7 @@
 					<div><span>02</span><p><strong>On-demand synchronization</strong>You decide when account metadata is refreshed.</p></div>
 					<div><span>03</span><p><strong>Portable local backups</strong>Export and restore your settings and snapshots with versioned JSON backups.</p></div>
 				</div>
-				<p class="analytics-disclosure"><strong>Privacy-friendly website analytics.</strong> This marketing website uses Cloudflare Web Analytics for aggregate traffic and performance statistics. It does not use cookies or collect personal data. The analytics beacon is not included in the SuiteCraft browser extension.</p>
+				<p class="analytics-disclosure"><strong>Explore with sample data.</strong> All interactive demonstrations use fictional data and do not connect to your NetSuite account.</p>
 			</div>
 		</section>
 
@@ -185,14 +222,17 @@
 	</main>
 	<a class="coffee-float" href="https://buymeacoffee.com/damiandk" target="_blank" rel="noopener noreferrer" aria-label="Buy me a coffee" title="Buy me a coffee"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h12v7a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5V8Z"/><path d="M17 10h1a3 3 0 0 1 0 6h-1M7 4c-1.5 1.2 1.5 1.8 0 3M12 4c-1.5 1.2 1.5 1.8 0 3"/></svg><span>Buy me a coffee</span></a>
 
-	<footer class="site-footer">
-		<div class="footer-brand"><img src="assets/suitecraft-mark.svg" alt=""><div><strong>SuiteCraft</strong><span>Toolkit for NetSuite</span></div></div>
-		<div class="footer-links"><a href="#tour">Product tour</a><a href="#features">Features</a><a href="#changelog">Changelog</a><a href="#about">About</a><a href="privacy.html">Privacy <span aria-hidden="true">↗</span></a><a href="#beta">Install</a><a href="https://buymeacoffee.com/damiandk" target="_blank" rel="noopener noreferrer">Support <span aria-hidden="true">↗</span></a><a href="https://tally.so/r/gDl0DO" target="_blank" rel="noopener noreferrer">Feedback <span aria-hidden="true">↗</span></a></div>
-		<p>© <span id="year">2026</span> Damian Krolikowski. SuiteCraft is an independent project and is not affiliated with Oracle or NetSuite.</p>
+	<footer class="site-footer" id="site-footer">
+		<div class="footer-brand"><img src="assets/brand/suitecraft-mark-on-dark.svg" alt=""><div><strong>SuiteCraft</strong><span>Toolkit for NetSuite</span></div></div>
+		<div class="footer-links"><a href="#workspace">Workspace</a><a href="#popup-demo">Popup</a><a href="#onpage-demo">On-page tools</a><a href="#tour">Gallery</a><a href="#all-features">Features</a><a href="#privacy">Privacy</a><a href="#changelog">Changelog</a><a href="https://chromewebstore.google.com/detail/suitecraft-for-netsuite/hpcgajocaokahoibhmiofdjdjnnielka" target="_blank" rel="noopener noreferrer">Install extension</a><a href="#about">About</a><a href="privacy.html">Privacy policy ↗</a><a href="https://buymeacoffee.com/damiandk" target="_blank" rel="noopener noreferrer">Support ↗</a><a href="https://tally.so/r/gDl0DO" target="_blank" rel="noopener noreferrer">Feedback ↗</a></div>
+		<div class="footer-bottom"><p>© <span id="year">2026</span> Damian Krolikowski. SuiteCraft is an independent project and is not affiliated with Oracle or NetSuite.</p><div class="motion-control"><button id="motion" type="button" aria-pressed="false">Ⅱ <span>Pause motion</span></button></div></div>
 	</footer>
-	<script src="assets/site.js"></script>
+<dialog id="screenshot-dialog" aria-labelledby="screenshot-title"><header><div><span>SUITECRAFT / PRODUCT PREVIEW</span><h2 id="screenshot-title">Product screenshot</h2></div><button type="button" id="close-screenshot" aria-label="Close screenshot">×</button></header><div class="screenshot-stage"><img id="screenshot-image" alt=""></div><p>Actual interface · Fictional sample data <a id="screenshot-original" href="#" target="_blank" rel="noopener">Open original image ↗</a></p></dialog>
+<script src="assets/site.js"></script>
 	<script src="assets/previews.js"></script>
 	<script src="assets/catalogue-demo.js"></script>
+
+<script src="motion.js"></script><script src="concept.js"></script><script src="workspace-demos.js"></script><script src="popup-demo.js"></script><script src="onpage-demo.js"></script><script src="demo-icons.js"></script><script src="experience.js"></script><script src="shortcut-guide.js"></script>
 	<script src="assets/analytics.js"></script>
 </body>
 </html>

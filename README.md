@@ -94,3 +94,10 @@ Nazwy i pochodzenie można uzupełnić w `assets/metadata.json`. Importowane pli
 są kopiami materiałów publicznych lub demonstracyjnych; ścieżki używane przez
 landing page pozostają bez zmian. Biblioteka nie zawiera źródeł rozszerzenia
 ani surowych zrzutów z kont klientów.
+
+
+## Interactive website — 16 October 2026
+
+The approved interactive design from `interactive-playground/relay-suitecraft-v2` is now the main website. It includes Workspace, popup and on-page demonstrations, a permanently visible screenshot gallery, contextual help, and a compact fixed header. Demo state is fictional and in memory only. Installation links open the Chrome Web Store.
+
+The previous complete checkout, including local changes and Git metadata, is preserved outside this repository at `../backup-old/suitecraft-site-2026-10-16`. Verification files, sitemaps, asset tooling and the current asset catalogue remain in place. This local replacement does not itself publish the site.
