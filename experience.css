@@ -52,3 +52,12 @@
 .site-header nav a.nav-cta:active{color:#24133d;background:#bea0ec}
 
 #changelog{scroll-margin-top:20px}
+
+/* One centered presentation frame for wide Workspace views and narrow tools. */
+.screen-gallery .tour-media{height:auto;min-height:0;aspect-ratio:16/10;padding:0;align-self:center;background:radial-gradient(ellipse at 20% 15%,#ede5fb,transparent 65%),linear-gradient(135deg,#f3eff9,#e8eff7)}
+.screen-gallery .tour-media .tour-image,.screen-gallery .tour-media.compact .tour-image{position:absolute;inset:18px;width:calc(100% - 36px);height:calc(100% - 36px);max-width:none;max-height:none;min-height:0;object-fit:contain;object-position:center;box-shadow:none;border-radius:0}
+.screen-gallery .tour-media:hover .tour-image{transform:none}
+.screen-gallery .tour-tabs{grid-template-columns:repeat(7,minmax(0,1fr))}
+.screenshot-stage{background:radial-gradient(ellipse at 20% 15%,#ede5fb,transparent 65%),linear-gradient(135deg,#f3eff9,#e8eff7)}
+@media(max-width:1050px){.screen-gallery .tour-tabs{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:720px){.screen-gallery .tour-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.screen-gallery .tour-media{aspect-ratio:16/10;min-height:0}.screen-gallery .tour-media .tour-image,.screen-gallery .tour-media.compact .tour-image{inset:12px;width:calc(100% - 24px);height:calc(100% - 24px)}}

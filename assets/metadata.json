@@ -93,54 +93,72 @@
       "02-script-workflow-inspector-1280x800.png"
     ],
     "usage": [
-      "Landing page",
-      "Chrome Web Store"
-    ]
+      "Landing page · Gallery",
+      "Publiczny podgląd produktu · dane demonstracyjne"
+    ],
+    "title": "Script & Workflow Inspector · workflow",
+    "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
+    "status": "ready"
   },
   "screenshots/08-change-plans.png": {
     "aliases": [
       "04-change-plans-1280x800.png"
     ],
     "usage": [
-      "Landing page",
-      "Chrome Web Store"
-    ]
+      "Landing page · Gallery",
+      "Publiczny podgląd produktu · dane demonstracyjne"
+    ],
+    "title": "Change Plans · gotowość wdrożenia",
+    "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
+    "status": "ready"
   },
   "screenshots/05-synchronization.png": {
     "aliases": [
       "06-synchronization-1280x800.png"
     ],
     "usage": [
-      "Landing page",
-      "Chrome Web Store"
-    ]
+      "Landing page · Gallery",
+      "Publiczny podgląd produktu · dane demonstracyjne"
+    ],
+    "title": "Synchronization · grupy kategorii",
+    "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
+    "status": "ready"
   },
   "screenshots/04-compare.png": {
     "aliases": [
       "05-compare-1280x800.png"
     ],
     "usage": [
-      "Landing page",
-      "Chrome Web Store"
-    ]
+      "Landing page · Gallery",
+      "Publiczny podgląd produktu · dane demonstracyjne"
+    ],
+    "title": "Compare · Source i Target",
+    "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
+    "status": "ready"
   },
   "screenshots/02-catalogue.png": {
     "aliases": [
       "03-catalogue-1280x800.png"
     ],
     "usage": [
-      "Landing page",
-      "Chrome Web Store"
-    ]
+      "Landing page · Gallery",
+      "Publiczny podgląd produktu · dane demonstracyjne"
+    ],
+    "title": "Catalogue · przegląd metadanych",
+    "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
+    "status": "ready"
   },
   "screenshots/03-record-explorer.png": {
     "aliases": [
       "01-record-explorer-1280x800.png"
     ],
     "usage": [
-      "Landing page",
-      "Chrome Web Store"
-    ]
+      "Landing page · Gallery",
+      "Publiczny podgląd produktu · dane demonstracyjne"
+    ],
+    "title": "Record Explorer · pola i wartości",
+    "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
+    "status": "ready"
   },
   "archive/store/06-favorites-1280x800.png": {
     "title": "Archiwum · 06 favorites 1280x800",
@@ -254,9 +272,63 @@
     "origin": "Istniejące publiczne zdjęcie autora landing page"
   },
   "screenshots/01-quick-access.png": {
-    "origin": "Kadr publiczny z anonimizacją · fikcyjne dane Northstar; szczegóły w screenshots/source/"
+    "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
+    "title": "Popup · Quick Actions, Quick Sync i Current Record",
+    "status": "ready",
+    "usage": [
+      "Landing page · Gallery",
+      "Publiczny podgląd produktu · dane demonstracyjne"
+    ]
   },
   "screenshots/09-navigation-search.png": {
-    "origin": "Kadr publiczny z anonimizacją · fikcyjne dane Northstar; szczegóły w screenshots/source/"
+    "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
+    "title": "SuiteCraft Search · dane Workspace",
+    "status": "ready",
+    "usage": [
+      "Landing page · Gallery",
+      "Publiczny podgląd produktu · dane demonstracyjne"
+    ]
+  },
+  "marketing/linkedin/suitecraft-1.0.0-first-stable-release.png": {
+    "title": "LinkedIn · premiera SuiteCraft 1.0.0",
+    "origin": "Wygenerowane przez imagegen na podstawie istniejącego logo i kolorów SuiteCraft",
+    "status": "ready",
+    "usage": "Post Project launch · First stable release · 1536×1024"
+  },
+  "screenshots/06-favorites.png": {
+    "title": "Favorites · grupy obiektów i notatki",
+    "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
+    "status": "ready",
+    "usage": [
+      "Landing page · Gallery",
+      "Publiczny podgląd produktu · dane demonstracyjne"
+    ]
+  },
+  "screenshots/10-reference-lists.png": {
+    "title": "Lists · biblioteka zapisanych list",
+    "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
+    "status": "ready",
+    "usage": [
+      "Landing page · Gallery",
+      "Publiczny podgląd produktu · dane demonstracyjne"
+    ]
+  },
+  "screenshots/14-add-change-plan.png": {
+    "title": "Add to Change Plan · filtr konta i typu",
+    "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
+    "status": "ready",
+    "usage": [
+      "Landing page · Gallery",
+      "Publiczny podgląd produktu · dane demonstracyjne"
+    ]
+  },
+  "screenshots/15-favorite-note.png": {
+    "title": "Favorites · prywatna notatka rekordu",
+    "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
+    "status": "ready",
+    "usage": [
+      "Landing page · Gallery",
+      "Publiczny podgląd produktu · dane demonstracyjne"
+    ]
   }
 }

@@ -101,3 +101,54 @@ ani surowych zrzutów z kont klientów.
 The approved interactive design from `interactive-playground/relay-suitecraft-v2` is now the main website. It includes Workspace, popup and on-page demonstrations, a permanently visible screenshot gallery, contextual help, and a compact fixed header. Demo state is fictional and in memory only. Installation links open the Chrome Web Store.
 
 The previous complete checkout, including local changes and Git metadata, is preserved outside this repository at `../backup-old/suitecraft-site-2026-10-16`. Verification files, sitemaps, asset tooling and the current asset catalogue remain in place. This local replacement does not itself publish the site.
+
+## Interactive demo refresh — 22 October 2026
+
+The Workspace and popup previews now follow the current extension UI. Lists use
+an account context, a searchable saved-list library, list-specific columns and
+pagination at both ends of the table. Favorites are grouped by object type and
+support inline note editing. Change Plans demonstrate filtering, plan types,
+creating a plan, item statuses, CSV export and simulated target readiness.
+Comparison uses Source as the expected state: source-only objects are **To add**
+on Target, target-only objects are **To remove**, and shared differences are
+**To update**. Swapping sides recalculates these actions. Synchronization uses
+three category groups, optional detail/deployment controls and an explicit local
+simulation. The popup includes Quick Sync and a share panel for the public Store
+listing.
+
+These are standalone website demos, not embedded extension code. All account,
+object and reference values are fictional. Demo Open in NetSuite actions explain
+what would open without navigating to an account. CSV files contain only filtered
+sample data; changes live in memory and reset on reload. Sharing copies only the
+public Chrome Web Store URL. Publishing remains a separate GitHub Pages step.
+
+Run browser interaction and responsive checks using an isolated headless profile:
+
+```sh
+node scripts/check-interactive-demos.mjs
+# Optional screenshot output, outside the public assets directory:
+node scripts/check-interactive-demos.mjs --screenshots=/tmp/suitecraft-demo-preview
+```
+
+The script requires Chrome/Brave/Chromium (or `CHROME_PATH`), starts a loopback
+static server, blocks external hosts, and checks the library, notes, plans,
+comparison direction, simulation, popup actions, expanded view and 390px layouts.
+
+The popup home menu uses compact Quick Actions, two side-by-side Current Record
+tiles, and a single-line System & Debugger disclosure. The 420 × 600 px default
+menu fits without scrolling; expanded forms/results retain natural scrolling.
+Subtle icon backgrounds distinguish search, list values, favorites and inspectors.
+
+## Screenshot gallery — 22 October 2026
+
+The Gallery uses twelve newly supplied, cropped and anonymized imagegen edits,
+plus the two retained Settings/list-configuration previews. Fourteen slides share
+a responsive 16:10 presentation frame, with portrait tools centered over the
+same subtle background. Images retain their natural aspect ratios; enlargement
+shows the complete asset. See `assets/screenshots/README.md` for provenance and
+`assets/screenshots/source/anonymization-2026-10-22.md` for prompt specifications.
+Private original screenshots are not part of this repository.
+
+## 1.1.0 release preparation
+
+Version 1.1.0 was requested on 22 October 2026. The landing page, popup demo version and release history now describe this release; 1.0.0 remains in collapsed history. These source changes do not publish the website or submit the extension to Chrome Web Store.

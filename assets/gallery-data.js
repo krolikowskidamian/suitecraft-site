@@ -228,6 +228,21 @@ window.SuiteCraftAssets = {
       "usage": []
     },
     {
+      "path": "brand/suitecraft-nav-mark.svg",
+      "title": "suitecraft nav mark",
+      "category": "brand",
+      "categoryLabel": "Marka i logo",
+      "status": "brand",
+      "origin": "Zestaw materiałów SuiteCraft",
+      "format": "SVG",
+      "width": 565.0,
+      "height": 470.0,
+      "bytes": 1858,
+      "sha256": "b1807678c6a06faeb24f35a5396425e47d0f7cd4de1b0d8ef17ae66aeeb4cee4",
+      "aliases": [],
+      "usage": []
+    },
+    {
       "path": "suitecraft-mark.svg",
       "title": "Symbol SuiteCraft",
       "category": "brand",
@@ -365,58 +380,76 @@ window.SuiteCraftAssets = {
       "usage": []
     },
     {
+      "path": "marketing/linkedin/suitecraft-1.0.0-first-stable-release.png",
+      "title": "LinkedIn · premiera SuiteCraft 1.0.0",
+      "category": "marketing",
+      "categoryLabel": "Materiały promocyjne",
+      "status": "ready",
+      "origin": "Wygenerowane przez imagegen na podstawie istniejącego logo i kolorów SuiteCraft",
+      "format": "PNG",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 1672567,
+      "sha256": "bad80dd93b033501c24ad5ee43f6bb4e543d9ce525a1e9c7fe5b92e4a67b2d01",
+      "aliases": [],
+      "usage": "Post Project launch · First stable release · 1536×1024"
+    },
+    {
       "path": "screenshots/01-quick-access.png",
-      "title": "Quick Access · popup",
+      "title": "Popup · Quick Actions, Quick Sync i Current Record",
       "category": "screenshots",
       "categoryLabel": "Screenshoty produktu",
       "status": "ready",
-      "origin": "Kadr publiczny z anonimizacją · fikcyjne dane Northstar; szczegóły w screenshots/source/",
+      "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
       "format": "PNG",
-      "width": 1054,
-      "height": 1492,
-      "bytes": 1306921,
-      "sha256": "9f7833b09743359b4d31c1dce0801162be1db1c408703677b47eeb25039f0a1c",
+      "width": 1049,
+      "height": 1499,
+      "bytes": 1311331,
+      "sha256": "99c0a9f25482816029248ad1638d4e5bdf8406391d96e2fe5e5234669c28e81c",
       "aliases": [],
-      "usage": []
+      "usage": [
+        "Landing page · Gallery",
+        "Publiczny podgląd produktu · dane demonstracyjne"
+      ]
     },
     {
       "path": "screenshots/02-catalogue.png",
-      "title": "Customization Workspace",
+      "title": "Catalogue · przegląd metadanych",
       "category": "screenshots",
       "categoryLabel": "Screenshoty produktu",
       "status": "ready",
-      "origin": "SuiteCraft Lab · demonstracyjne dane",
+      "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
       "format": "PNG",
-      "width": 1280,
-      "height": 800,
-      "bytes": 94253,
-      "sha256": "e6769313483569524cf1a2800388da5ac646dfbcc7b5a87cd08bb21f92ee1397",
+      "width": 1606,
+      "height": 979,
+      "bytes": 1329635,
+      "sha256": "f87b00a5ae9e204a8ca4fcbdc0960e5c2b230e67cf7bdd04d8cdec19a81dbaa7",
       "aliases": [
         "03-catalogue-1280x800.png"
       ],
       "usage": [
-        "Landing page",
-        "Chrome Web Store"
+        "Landing page · Gallery",
+        "Publiczny podgląd produktu · dane demonstracyjne"
       ]
     },
     {
       "path": "screenshots/03-record-explorer.png",
-      "title": "Record Explorer",
+      "title": "Record Explorer · pola i wartości",
       "category": "screenshots",
       "categoryLabel": "Screenshoty produktu",
       "status": "ready",
-      "origin": "SuiteCraft Lab · demonstracyjne dane",
+      "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
       "format": "PNG",
-      "width": 1280,
-      "height": 800,
-      "bytes": 137928,
-      "sha256": "7d9e27d23af3ea6fc2f909634d0455ad8dc5738929ea1de2beb6242eb73688ca",
+      "width": 1120,
+      "height": 1404,
+      "bytes": 1221639,
+      "sha256": "4c4dc566658d46fd7fef32a4267fe1c32baeaac70bee885de08e3306900e8e49",
       "aliases": [
         "01-record-explorer-1280x800.png"
       ],
       "usage": [
-        "Landing page",
-        "Chrome Web Store"
+        "Landing page · Gallery",
+        "Publiczny podgląd produktu · dane demonstracyjne"
       ]
     },
     {
@@ -438,128 +471,137 @@ window.SuiteCraftAssets = {
     },
     {
       "path": "screenshots/04-compare.png",
-      "title": "Compare",
+      "title": "Compare · Source i Target",
       "category": "screenshots",
       "categoryLabel": "Screenshoty produktu",
       "status": "ready",
-      "origin": "SuiteCraft Lab · demonstracyjne dane",
+      "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
       "format": "PNG",
-      "width": 1280,
-      "height": 800,
-      "bytes": 109927,
-      "sha256": "4dcb3ee4e5533b146e118296789cd5b29029874483dff951ebc048281f0f6d35",
+      "width": 1606,
+      "height": 979,
+      "bytes": 1303019,
+      "sha256": "aa0fd6bf6b3648ac59f887bd07cdefb4109d3426eae92f19f482c280a546fd36",
       "aliases": [
         "05-compare-1280x800.png"
       ],
       "usage": [
-        "Landing page",
-        "Chrome Web Store"
+        "Landing page · Gallery",
+        "Publiczny podgląd produktu · dane demonstracyjne"
       ]
     },
     {
       "path": "screenshots/05-synchronization.png",
-      "title": "Synchronization",
+      "title": "Synchronization · grupy kategorii",
       "category": "screenshots",
       "categoryLabel": "Screenshoty produktu",
       "status": "ready",
-      "origin": "SuiteCraft Lab · demonstracyjne dane",
+      "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
       "format": "PNG",
-      "width": 1280,
-      "height": 800,
-      "bytes": 99533,
-      "sha256": "9a3da34cf68ccab5d17e93993d91429e9efbb84d8f3a166397d7c52643b53a22",
+      "width": 1586,
+      "height": 992,
+      "bytes": 1169065,
+      "sha256": "37df5ee5202c737fdb65f32720a73547bcf789330cd6a8748755d03d6baf2619",
       "aliases": [
         "06-synchronization-1280x800.png"
       ],
       "usage": [
-        "Landing page",
-        "Chrome Web Store"
+        "Landing page · Gallery",
+        "Publiczny podgląd produktu · dane demonstracyjne"
       ]
     },
     {
       "path": "screenshots/06-favorites.png",
-      "title": "Favorites",
+      "title": "Favorites · grupy obiektów i notatki",
       "category": "screenshots",
       "categoryLabel": "Screenshoty produktu",
       "status": "ready",
-      "origin": "SuiteCraft Lab · demonstracyjne dane",
+      "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
       "format": "PNG",
-      "width": 1440,
-      "height": 1000,
-      "bytes": 131012,
-      "sha256": "6e0f03ee3f3c37b8f1a476d0c62dd548c1b0cd7d51d90a8adc87ea7081e35aad",
+      "width": 1606,
+      "height": 979,
+      "bytes": 1217614,
+      "sha256": "c5e181747fc74aa031111fc047b7edd61a401a95190494a9e13ea4a1a31ee845",
       "aliases": [],
-      "usage": []
+      "usage": [
+        "Landing page · Gallery",
+        "Publiczny podgląd produktu · dane demonstracyjne"
+      ]
     },
     {
       "path": "screenshots/07-script-workflow-inspector.png",
-      "title": "Script & Workflow Inspector",
+      "title": "Script & Workflow Inspector · workflow",
       "category": "screenshots",
       "categoryLabel": "Screenshoty produktu",
       "status": "ready",
-      "origin": "SuiteCraft Lab · demonstracyjne dane",
+      "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
       "format": "PNG",
-      "width": 1280,
-      "height": 800,
-      "bytes": 154986,
-      "sha256": "277e5a4bbbb5a399dbb6808e1d7890fb25aa81079f0312bbf88fb67daf156d4f",
+      "width": 1395,
+      "height": 1127,
+      "bytes": 1313600,
+      "sha256": "27897c2a4c414ec2e45cc7cadfbe43a485ff1ca4ffd9e08166c0579476cd6463",
       "aliases": [
         "02-script-workflow-inspector-1280x800.png"
       ],
       "usage": [
-        "Landing page",
-        "Chrome Web Store"
+        "Landing page · Gallery",
+        "Publiczny podgląd produktu · dane demonstracyjne"
       ]
     },
     {
       "path": "screenshots/08-change-plans.png",
-      "title": "Change Plans",
+      "title": "Change Plans · gotowość wdrożenia",
       "category": "screenshots",
       "categoryLabel": "Screenshoty produktu",
       "status": "ready",
-      "origin": "SuiteCraft Lab · demonstracyjne dane",
+      "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
       "format": "PNG",
-      "width": 1280,
-      "height": 800,
-      "bytes": 114169,
-      "sha256": "b749c95298898839c5393aedc6535390e21cddffed80150e0bf65d92cc476b7c",
+      "width": 1606,
+      "height": 979,
+      "bytes": 1362829,
+      "sha256": "a7846cbce8a1719d3e7d90f4f5f1cd07537d2c34b7aebce3afd102c110e49293",
       "aliases": [
         "04-change-plans-1280x800.png"
       ],
       "usage": [
-        "Landing page",
-        "Chrome Web Store"
+        "Landing page · Gallery",
+        "Publiczny podgląd produktu · dane demonstracyjne"
       ]
     },
     {
       "path": "screenshots/09-navigation-search.png",
-      "title": "SuiteCraft Search",
+      "title": "SuiteCraft Search · dane Workspace",
       "category": "screenshots",
       "categoryLabel": "Screenshoty produktu",
       "status": "ready",
-      "origin": "Kadr publiczny z anonimizacją · fikcyjne dane Northstar; szczegóły w screenshots/source/",
+      "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
       "format": "PNG",
-      "width": 1441,
-      "height": 1092,
-      "bytes": 1240085,
-      "sha256": "a6074dc414cdb91a19326b0558a05945d458ae930ca86f1b6f0d52787107d65d",
+      "width": 1238,
+      "height": 1271,
+      "bytes": 1333938,
+      "sha256": "5fe42a1f2d4aab250e01733a83b8adeab436d6e459ec41b436efc64589a99178",
       "aliases": [],
-      "usage": []
+      "usage": [
+        "Landing page · Gallery",
+        "Publiczny podgląd produktu · dane demonstracyjne"
+      ]
     },
     {
       "path": "screenshots/10-reference-lists.png",
-      "title": "Reference Lists",
+      "title": "Lists · biblioteka zapisanych list",
       "category": "screenshots",
       "categoryLabel": "Screenshoty produktu",
       "status": "ready",
-      "origin": "SuiteCraft Lab · demonstracyjne dane",
+      "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
       "format": "PNG",
-      "width": 1440,
-      "height": 1000,
-      "bytes": 116825,
-      "sha256": "50e56c74659bf11c8f7762990287dc9207fdc4df33437281860c8f99c97119f7",
+      "width": 1606,
+      "height": 979,
+      "bytes": 1189351,
+      "sha256": "508845f94bd429785cd7aa3a877ff6e49ea2fcd77868a4863f055cd860c260f5",
       "aliases": [],
-      "usage": []
+      "usage": [
+        "Landing page · Gallery",
+        "Publiczny podgląd produktu · dane demonstracyjne"
+      ]
     },
     {
       "path": "screenshots/11-settings.png",
@@ -605,6 +647,42 @@ window.SuiteCraftAssets = {
       "sha256": "4ea62a2abb9d3732ab01ac32711a38922f75c73fff96e39655bca44c445dac7e",
       "aliases": [],
       "usage": []
+    },
+    {
+      "path": "screenshots/14-add-change-plan.png",
+      "title": "Add to Change Plan · filtr konta i typu",
+      "category": "screenshots",
+      "categoryLabel": "Screenshoty produktu",
+      "status": "ready",
+      "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
+      "format": "PNG",
+      "width": 1012,
+      "height": 1555,
+      "bytes": 1209714,
+      "sha256": "5a62b476196882c7ce480cdc88ca601f6f24761bf8e74b2d385c0f30a6ea9ef5",
+      "aliases": [],
+      "usage": [
+        "Landing page · Gallery",
+        "Publiczny podgląd produktu · dane demonstracyjne"
+      ]
+    },
+    {
+      "path": "screenshots/15-favorite-note.png",
+      "title": "Favorites · prywatna notatka rekordu",
+      "category": "screenshots",
+      "categoryLabel": "Screenshoty produktu",
+      "status": "ready",
+      "origin": "Zrzut przekazany przez autora · anonimizacja i kadrowanie imagegen · 22.10.2026",
+      "format": "PNG",
+      "width": 1369,
+      "height": 1149,
+      "bytes": 1179649,
+      "sha256": "924e932e8d1034cf2ff1439cec8c3537f97386ed79dcaa19d79c1c142c29991f",
+      "aliases": [],
+      "usage": [
+        "Landing page · Gallery",
+        "Publiczny podgląd produktu · dane demonstracyjne"
+      ]
     },
     {
       "path": "screenshots/source/01-quick-access-portrait.png",

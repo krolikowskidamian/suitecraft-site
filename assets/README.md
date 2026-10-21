@@ -45,6 +45,7 @@ Opcjonalne nazwy, statusy i pochodzenie edytuj w `assets/metadata.json`. Generat
 | [Symbol SuiteCraft · na ciemne tło](brand/suitecraft-mark-on-dark.svg) | SVG | 565.0 × 470.0 | brand |
 | [Symbol SuiteCraft · na jasne tło](brand/suitecraft-mark-on-light.svg) | SVG | 565.0 × 470.0 | brand |
 | [Symbol SuiteCraft](brand/suitecraft-mark.svg) | SVG | 654.0 × 654.0 | brand |
+| [suitecraft nav mark](brand/suitecraft-nav-mark.svg) | SVG | 565.0 × 470.0 | brand |
 | [Symbol SuiteCraft](suitecraft-mark.svg) | SVG | 654.0 × 654.0 | brand |
 | [LinkedIn · banner strony SuiteCraft](social/suitecraft-linkedin-banner-1512x256.png) | PNG | 1512 × 256 | ready |
 | [LinkedIn · edytowalny banner SVG](social/suitecraft-linkedin-banner-1512x256.svg) | SVG | 1512.0 × 256.0 | source |
@@ -54,20 +55,23 @@ Opcjonalne nazwy, statusy i pochodzenie edytuj w `assets/metadata.json`. Generat
 | [Chrome Web Store · duży banner, wariant](marketing/chrome-web-store/promo-marquee-1400x560-alternative.png) | PNG | 1398 × 399 | variant |
 | [Chrome Web Store · duży banner](marketing/chrome-web-store/promo-marquee-1400x560.png) | PNG | 1400 × 560 | variant |
 | [Chrome Web Store · kafelek, wariant](marketing/chrome-web-store/promo-small-440x280-alternative.png) | PNG | 440 × 280 | variant |
-| [Quick Access · popup](screenshots/01-quick-access.png) | PNG | 1054 × 1492 | ready |
-| [Customization Workspace](screenshots/02-catalogue.png) | PNG | 1280 × 800 | ready |
-| [Record Explorer](screenshots/03-record-explorer.png) | PNG | 1280 × 800 | ready |
+| [LinkedIn · premiera SuiteCraft 1.0.0](marketing/linkedin/suitecraft-1.0.0-first-stable-release.png) | PNG | 1536 × 1024 | ready |
+| [Popup · Quick Actions, Quick Sync i Current Record](screenshots/01-quick-access.png) | PNG | 1049 × 1499 | ready |
+| [Catalogue · przegląd metadanych](screenshots/02-catalogue.png) | PNG | 1606 × 979 | ready |
+| [Record Explorer · pola i wartości](screenshots/03-record-explorer.png) | PNG | 1120 × 1404 | ready |
 | [Record Explorer · starszy kadr](screenshots/03-record-object.png) | PNG | 1440 × 1000 | archive |
-| [Compare](screenshots/04-compare.png) | PNG | 1280 × 800 | ready |
-| [Synchronization](screenshots/05-synchronization.png) | PNG | 1280 × 800 | ready |
-| [Favorites](screenshots/06-favorites.png) | PNG | 1440 × 1000 | ready |
-| [Script & Workflow Inspector](screenshots/07-script-workflow-inspector.png) | PNG | 1280 × 800 | ready |
-| [Change Plans](screenshots/08-change-plans.png) | PNG | 1280 × 800 | ready |
-| [SuiteCraft Search](screenshots/09-navigation-search.png) | PNG | 1441 × 1092 | ready |
-| [Reference Lists](screenshots/10-reference-lists.png) | PNG | 1440 × 1000 | ready |
+| [Compare · Source i Target](screenshots/04-compare.png) | PNG | 1606 × 979 | ready |
+| [Synchronization · grupy kategorii](screenshots/05-synchronization.png) | PNG | 1586 × 992 | ready |
+| [Favorites · grupy obiektów i notatki](screenshots/06-favorites.png) | PNG | 1606 × 979 | ready |
+| [Script & Workflow Inspector · workflow](screenshots/07-script-workflow-inspector.png) | PNG | 1395 × 1127 | ready |
+| [Change Plans · gotowość wdrożenia](screenshots/08-change-plans.png) | PNG | 1606 × 979 | ready |
+| [SuiteCraft Search · dane Workspace](screenshots/09-navigation-search.png) | PNG | 1238 × 1271 | ready |
+| [Lists · biblioteka zapisanych list](screenshots/10-reference-lists.png) | PNG | 1606 × 979 | ready |
 | [Settings](screenshots/11-settings.png) | PNG | 1440 × 1000 | ready |
 | [List Synchronization](screenshots/12-list-synchronization.png) | PNG | 1440 × 1000 | ready |
 | [Quick Access · wyszukiwanie list](screenshots/13-popup-list-search.png) | PNG | 1440 × 1000 | ready |
+| [Add to Change Plan · filtr konta i typu](screenshots/14-add-change-plan.png) | PNG | 1012 × 1555 | ready |
+| [Favorites · prywatna notatka rekordu](screenshots/15-favorite-note.png) | PNG | 1369 × 1149 | ready |
 | [Quick Access · starszy kadr źródłowy](screenshots/source/01-quick-access-portrait.png) | PNG | 480 × 760 | archive |
 | [Demo Catalogue · dark](previews/catalogue-demo/suitecraft-catalogue-dark.png) | PNG | 1440 × 1000 | preview |
 | [Demo Catalogue · desktop](previews/catalogue-demo/suitecraft-catalogue-desktop.png) | PNG | 1440 × 1000 | preview |

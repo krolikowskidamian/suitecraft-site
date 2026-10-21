@@ -3,3 +3,40 @@
 @media(max-width:720px){.popup-showcase{grid-template-columns:1fr;padding:28px 16px;gap:25px;margin:10px 0 20px}.popup-story h2{font-size:36px}.popup-story>p:not(.eyebrow){font-size:12px}.popup-scenes{grid-template-columns:1fr 1fr;gap:6px}.popup-scenes button{padding:10px 7px;gap:7px;align-items:flex-start}.popup-scenes button strong{font-size:9px}.popup-scenes button small,.popup-scenes button b{display:none}.popup-scenes button>span{font-size:8px;padding-top:1px}.popup-story .popup-fine{font-size:8px;margin-top:16px}.pp-header{padding:13px 12px;gap:7px}.pp-header img{width:31px;height:31px}.pp-header strong{font-size:15px}.pp-header>div>span{font-size:8px}.pp-header a{width:26px;height:30px;font-size:17px}.pp-body{padding:12px 10px}.pp-body summary,.pp-tool{gap:8px;padding:8px}.pp-icon{width:29px;height:31px;font-size:17px}.pp-body summary strong,.pp-tool strong{font-size:10px}.pp-body summary small,.pp-tool small{font-size:8px}.pp-workspace{padding:10px 8px;gap:8px}.pp-workspace strong{font-size:11px}.pp-workspace small{font-size:8px}.pp-footer{padding:12px;font-size:9px}.pp-panel{padding:12px 9px}.popup-shell{height:600px}.pp-types button{font-size:8px}}
 
 .pp-header a svg{width:18px;height:18px}
+/* Current popup header and Quick Sync entry point. */
+.pp-header{position:relative;z-index:2;gap:9px}.pp-header>div{min-width:0}.pp-header>button{display:grid;place-items:center;flex:0 0 34px;width:34px;height:34px;padding:0;border:1px solid #ffffff33;border-radius:9px;background:#ffffff0f;color:#d9c7ff;cursor:pointer}.pp-header>button svg{width:18px;height:18px}
+.pp-header>a,.pp-header>button{margin-left:0}.pp-header>a:first-of-type{margin-left:auto}
+.pp-share-panel[hidden],.pp-sync-panel[hidden]{display:none!important}.pp-share-panel{position:absolute;right:16px;top:calc(100% - 4px);width:252px;display:grid;gap:7px;padding:12px;border:1px solid #d6c8ee;border-radius:11px;background:#fff;color:#243248;box-shadow:0 10px 28px #17283d33}
+.pp-share-panel>strong{font-size:12px;margin-bottom:3px}.pp-header .pp-share-panel>a,.pp-share-panel>button{display:block;width:100%;height:auto;margin:0;padding:9px 10px;border:1px solid #d9cbed;border-radius:7px;background:#f5f0ff;color:#604099;text-decoration:none;font:11px 'DM Sans',sans-serif;text-align:left;cursor:pointer}.pp-share-panel>p{margin:0;font-size:10px;color:#52627a}.pp-share-panel>p:empty{display:none}
+.pp-workspace-actions{display:grid;grid-template-columns:minmax(0,1fr) 104px;gap:8px;margin-bottom:14px}.pp-workspace-actions>.pp-workspace{margin:0;min-width:0;padding:10px 9px;gap:8px}.pp-workspace-actions .pp-workspace strong{font-size:12px}.pp-workspace-actions .pp-workspace small{font-size:9px}.pp-workspace-actions .pp-icon{width:30px;height:30px;flex-basis:30px}.pp-quick-sync{display:grid;place-items:center;align-content:center;gap:4px;border:1px solid #d5c4ef;border-radius:10px;background:#f5efff;color:#6945b8;cursor:pointer}.pp-quick-sync svg{width:20px;height:20px}.pp-quick-sync strong{font:650 10px 'DM Sans',sans-serif}.pp-quick-sync:hover{background:#ece3fc}.pp-sync-panel{border:1px solid #d5c4ef;border-radius:9px;padding:12px;margin-bottom:14px;background:#f9f5ff;color:#243248}.pp-sync-panel p{font-size:10px;line-height:1.6;margin:0 0 9px}.pp-sync-panel small{font-size:9px;color:#65718a}.pp-sync-stats{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}.pp-sync-stats span,.pp-sync-stats strong{display:block;font-size:9px;line-height:1.8}.pp-sync-stats span{color:#65718a;font-weight:400}.pp-sync-panel .pp-primary{background:#6945b8;color:#fff}
+@media(max-width:720px){.pp-header>button{flex-basis:28px;width:28px;height:30px}.pp-workspace-actions{grid-template-columns:minmax(0,1fr) 90px;gap:6px}.pp-workspace-actions .pp-workspace strong{font-size:10px}.pp-workspace-actions .pp-workspace small{font-size:8px}.pp-workspace-actions .pp-workspace{padding:9px 7px;gap:6px}.pp-workspace-actions .pp-icon{width:25px;flex-basis:25px}.pp-quick-sync strong{font-size:9px}}
+
+.pp-header>a:nth-of-type(2){color:#ffe1a0;border-color:#ffd78047;background:#ffd78014}
+
+/* Match the extension's compact home menu; open panels may scroll naturally. */
+.pp-body{padding:12px 18px}
+.pp-workspace-actions{margin-bottom:12px}
+.pp-kicker{margin:10px 0 6px}
+.pp-body>details:not(.pp-teal)>summary{min-height:42px;padding:6px 9px;gap:8px}
+.pp-body>details:not(.pp-teal)>summary .pp-icon{width:30px;height:30px;flex:0 0 30px}
+.pp-body>details:not(.pp-teal)>summary strong{font-size:11px;line-height:1.35}
+.pp-body>details:not(.pp-teal)>summary small{font-size:9px;line-height:1.35;margin-top:2px}
+.pp-record-tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.pp-record-tiles>.pp-tool{min-height:52px;height:100%;margin:0;padding:10px 11px;gap:8px;align-items:center}
+.pp-record-tiles .pp-tool .pp-icon{width:30px;height:30px;flex:0 0 30px}
+.pp-record-tiles .pp-tool>div{min-width:0}
+.pp-record-tiles .pp-tool strong{font-size:11px;line-height:1.35;white-space:nowrap}
+.pp-record-tiles .pp-tool>b{display:none}
+.pp-record-tiles .pp-tool small{display:block;font-size:9px;line-height:1.35;margin-top:2px;white-space:nowrap}
+#pp-inspector .pp-icon{background:#f4eafa;color:#82549e}
+[data-popup-panel="lists"]>summary .pp-icon{background:#e9f0fc;color:#426ba7}
+.pp-teal>summary{min-height:42px;padding:6px 9px;gap:8px}
+.pp-teal>summary .pp-icon{width:30px;height:30px;flex:0 0 30px}
+.pp-teal>summary .pp-icon svg{width:21px;height:21px}
+@media(max-width:720px){.pp-body{padding:12px 10px}.pp-record-tiles>.pp-tool{gap:7px;padding:10px 9px}.pp-record-tiles .pp-tool strong{font-size:11px}.pp-record-tiles .pp-tool .pp-icon{flex-basis:30px;width:30px;height:30px}}
+
+.pp-record-tiles .pp-tool>div{flex:1;min-width:0}
+
+@media(max-width:720px){.pp-record-tiles{grid-template-columns:1fr}}
+
+#pp-find-form>small{display:block;margin:9px 0 4px;line-height:1.5}
