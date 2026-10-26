@@ -3,9 +3,6 @@
  document.querySelectorAll('.op-shortcuts [data-op-tool]').forEach(b=>{const key=b.dataset.opTool;if(icons[key])b.innerHTML=icons[key]});
  document.querySelectorAll('.op-scenes [data-op-tool]').forEach(b=>{const key=b.dataset.opTool;const text=b.textContent.replace(/^[^A-Za-z]+/,'');b.replaceChildren();const icon=document.createElement('span');icon.className='demo-icon';icon.innerHTML=icons[key]||'';b.append(icon,document.createTextNode(text))});
  icons.find='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5M6 5h13v13"/></svg>';
- const popupMap={'find':'find','custom':'search','lists':'explorer','favorites':'favorite','urls':'compare'};
- for(const [key,icon] of Object.entries(popupMap)){const slot=document.querySelector(`[data-popup-panel="${key}"] .pp-icon`);if(slot)slot.innerHTML=icons[icon]}
- for(const [id,key] of Object.entries({'pp-record-explorer':'explorer','pp-inspector':'inspector'})){const slot=document.querySelector(`#${id} .pp-icon`);if(slot)slot.innerHTML=icons[key]}
  const workspace=document.querySelector('.pp-workspace .pp-icon');if(workspace)workspace.innerHTML=icons.workspace;
  for(const [key,icon] of Object.entries({lists:'lists',favorites:'favorite',plans:'plan',compare:'compare',sync:'refresh'})){const slot=document.querySelector(`#workspace-tab-${key} .ws-icon`);if(slot)slot.innerHTML=icons[icon]}
  document.querySelector('#op-native-history').addEventListener('click',()=>{document.querySelector('#op-status').textContent='Sample recent record: NS-500001 · Lot Numbered Inventory Item #123';});
