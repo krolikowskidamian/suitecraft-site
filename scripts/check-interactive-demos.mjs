@@ -48,6 +48,52 @@ try{
  });
  await evaluate("document.querySelector('#pp-share-copy').click(); new Promise(resolve=>setTimeout(resolve,20))");assert.equal(await evaluate('window.__copied'),'https://chromewebstore.google.com/detail/suitecraft-for-netsuite/hpcgajocaokahoibhmiofdjdjnnielka');
  await client.call('Input.dispatchKeyEvent',{type:'keyDown',key:'Escape',code:'Escape'});assert.equal(await evaluate("document.querySelector('#pp-share-panel').hidden"),true);
+ // File Cabinet mirrors the extension's type choice and numeric-ID navigation.
+ const verifyPopupCabinet=()=>{
+  const $=s=>document.querySelector(s),check=(ok,message)=>{if(!ok)throw Error(message);};
+  const choose=label=>[...$('#pp-record-types').children].find(b=>b.textContent===label).click();
+  const submit=value=>{$('#pp-record-id').value=value;$('#pp-find-form').requestSubmit();};
+  $('#popup-reset').click();$('[data-popup-scene="find"]').click();
+  check($('#pp-record-types').children.length===9,'File Cabinet category missing');
+  check(getComputedStyle($('#pp-cabinet-types')).display==='none','Cabinet choices visible for Transaction');
+  choose('File Cabinet');
+  check(!$('#pp-cabinet-types').hidden&&$('#pp-cabinet-types').children.length===2,'File/Folder choices missing');
+  check($('#pp-record-id-label').textContent==='Internal ID'&&$('#pp-record-id').inputMode==='numeric','Cabinet input should request numeric ID');
+  check($('#pp-cabinet-types button[aria-pressed="true"]').textContent==='File','File must be selected by default');
+  submit('123');check(!$('#pp-record-result').hidden&&$('#pp-record-result strong').textContent==='Sample File','File preview missing');
+  $('#pp-cabinet-types button:last-child').click();check($('#pp-record-result').hidden,'Type change retains stale result');
+  submit('456');check($('#pp-record-result strong').textContent==='Sample Folder'&&$('#pp-record-result').textContent.includes('Internal ID: 456'),'Folder preview incorrect');
+  for(const value of ['0','-1','folder name','42&foo=bar']){submit(value);check($('#pp-record-result').hidden&&$('#pp-status').textContent.includes('positive numeric Internal ID'),'Invalid Cabinet ID was accepted: '+value);}
+  choose('Transaction');check(getComputedStyle($('#pp-cabinet-types')).display==='none','Cabinet choices did not hide');
+  submit('Sample invoice');check($('#pp-record-result').textContent.includes('Sample invoice'),'Record name lookup regressed');
+  $('#popup-reset').click();check($('#pp-record-id').value===''&&$('#pp-record-result').hidden&&$('#pp-cabinet-types').hidden,'Popup reset did not clear Cabinet state');
+  $('[data-popup-scene="find"]').click();choose('File Cabinet');
+  check($('#pp-cabinet-types button[aria-pressed="true"]').textContent==='File','Reset retained Folder selection');
+  const buttons=[...$('#pp-cabinet-types').children].map(n=>n.getBoundingClientRect());
+  check(buttons[0].top===buttons[1].top,'File and Folder should be side by side');
+  submit('123');
+ };
+ await run(verifyPopupCabinet);
+ if(screenshotDir){await mkdir(screenshotDir,{recursive:true});await capture('popup-file-cabinet-desktop.png','#popup-demo .popup-shell');}
+ await run(()=>document.querySelector('#popup-reset').click());
+ const verifyPopupQuickSync=async()=>{
+  const $=s=>document.querySelector(s),check=(ok,message)=>{if(!ok)throw Error(message);};
+  $('#popup-reset').click();$('#pp-quick-sync').click();
+  await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+  check(!$('#pp-sync-panel').hidden&&$('#pp-quick-sync').getAttribute('aria-expanded')==='true','Quick Sync did not expand');
+  check($('.pp-body').scrollTop===0,'Quick Sync scrolled its entry point out of view');
+  check($('#pp-sync-status').textContent==='Progress opens in Workspace.','Quick Sync progress hint differs from popup');
+  check(!$('#pp-sync-panel').textContent.includes('Latest saved sync'),'Quick Sync shows obsolete sample statistics');
+  const start=$('#pp-sync-start'),workspace=$('#pp-sync-workspace'),left=start.getBoundingClientRect(),right=workspace.getBoundingClientRect();
+  check(start.textContent==='Start sync'&&left.right<right.left&&Math.abs((left.top+left.bottom)-(right.top+right.bottom))<3,'Quick Sync actions must be compact and on opposite sides of one row');
+  start.click();check(!$('#workspace-panel-sync').hidden&&$('#ms-state').textContent.includes('complete'),'Start sync did not start the Workspace simulation');
+  $('#pp-quick-sync').click();check($('#pp-sync-panel').hidden&&$('#pp-quick-sync').getAttribute('aria-expanded')==='false','Quick Sync did not collapse');
+  $('#pp-quick-sync').click();
+  await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+ };
+ await run(verifyPopupQuickSync);
+ if(screenshotDir)await capture('popup-quick-sync-desktop.png','#popup-demo .popup-shell');
+ await run(()=>document.querySelector('#popup-reset').click());
  // Non-reduced motion: cancelling and leaving the tab stop work and unlock settings.
  await client.call('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'no-preference'}]});
  await run(()=>{const $=s=>document.querySelector(s);$('#workspace-tab-sync').click();$('#ms-start').click();if(!$('#ms-speed').disabled)throw Error('Running sync did not lock settings');$('#ms-cancel').click();if($('#ms-speed').disabled||!$('#ms-state').textContent.includes('cancelled'))throw Error('Cancel did not unlock settings');$('#ms-start').click();$('#workspace-tab-lists').click();if(!$('#ms-state').textContent.includes('paused'))throw Error('Leaving sync did not stop simulation');});
@@ -68,9 +114,17 @@ try{
  await run(()=>{document.querySelector('#popup-reset').click();const body=document.querySelector('.pp-body'),tiles=[...document.querySelectorAll('.pp-record-tiles .pp-tool')].map(n=>n.getBoundingClientRect());if(body.scrollHeight>body.clientHeight+1)throw Error('Popup demo home scrolls');if(tiles.length!==2||tiles[0].top!==tiles[1].top)throw Error('Record tools are not side by side');});
  // Mobile should scroll tables locally, without widening the entire demo/page.
  await client.call('Emulation.setDeviceMetricsOverride',{width:390,height:900,deviceScaleFactor:1,mobile:false});
+ await run(verifyPopupCabinet);
+ assert.ok(await evaluate('document.documentElement.scrollWidth<=innerWidth+2'),'File Cabinet causes mobile page overflow');
+ if(screenshotDir)await capture('popup-file-cabinet-mobile.png','#popup-demo .popup-shell');
+ await run(()=>document.querySelector('#popup-reset').click());
+ await run(verifyPopupQuickSync);
+ assert.ok(await evaluate('document.documentElement.scrollWidth<=innerWidth+2'),'Quick Sync causes mobile page overflow');
+ if(screenshotDir)await capture('popup-quick-sync-mobile.png','#popup-demo .popup-shell');
+ await run(()=>document.querySelector('#popup-reset').click());
  for(const scene of ['lists','favorites','plans','compare','sync']){await evaluate(`document.querySelector('#workspace-tab-${scene}').click()`);await pause(50);const dimensions=await evaluate("({page:document.documentElement.scrollWidth,viewport:innerWidth,demo:document.querySelector('#workspace-demo').getBoundingClientRect().width,body:document.querySelector('#workspace-demo .mini-demo:not([hidden])')?.getBoundingClientRect().width})");assert.ok(dimensions.page<=dimensions.viewport+2,scene+' causes page overflow: '+JSON.stringify(dimensions));if(screenshotDir&&['lists','plans','compare'].includes(scene))await capture(scene+'-mobile.png','#workspace-demo [data-demo-surface]');}
  await run(()=>{document.querySelector('#workspace-tab-lists').click();document.querySelector('#workspace-demo [data-demo-expand]').click();if(!document.querySelector('.catalogue-demo-dialog[open]'))throw Error('Expanded Workspace missing');document.querySelector('.catalogue-demo-dialog').close();});
  await evaluate("showTourSlide(13);document.querySelector('#tour-image').decode()");const mobileGallery=await evaluate("(()=>{const f=document.querySelector('#tour-media').getBoundingClientRect();return f.width/f.height;})()");assert.ok(Math.abs(mobileGallery-1.6)<.01,'Mobile gallery ratio changed');
  assert.deepEqual(errors,[],'Browser runtime errors');
- console.log('PASS Live demos: list library/columns/pagination, grouped favorites/notes, plan types/create/status/reset, directional compare, sync simulation, popup share/Quick Sync, expanded view, dark theme, 390px layouts and all 14 gallery images in 16:10 frames.');
+ console.log('PASS Live demos: list library/columns/pagination, grouped favorites/notes, plan types/create/status/reset, directional compare, sync simulation, popup share/Quick Sync/File Cabinet, expanded view, dark theme, 390px layouts and all 14 gallery images in 16:10 frames.');
 }finally{client?.close();if(chrome&&chrome.exitCode===null){const exited=new Promise(resolve=>chrome.once('exit',resolve));chrome.kill();await Promise.race([exited,pause(2000)]);}await new Promise(resolve=>server.close(resolve));await rm(profile,{recursive:true,force:true,maxRetries:3,retryDelay:100});}
